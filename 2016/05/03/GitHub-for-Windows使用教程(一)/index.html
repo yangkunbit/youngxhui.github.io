@@ -1,0 +1,789 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="GitHub," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="GitHub for windows (一)前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17.0)
+什么是Github说到什么事github，我们先">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub for Windows使用教程（一）">
+<meta property="og:url" content="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/index.html">
+<meta property="og:site_name" content="ISLAND">
+<meta property="og:description" content="GitHub for windows (一)前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17.0)
+什么是Github说到什么事github，我们先">
+<meta property="og:image" content="http://i3.piimg.com/2513fb0c843f35c9.png">
+<meta property="og:image" content="http://i2.piimg.com/7a331713c8a3f28e.png">
+<meta property="og:image" content="http://i2.piimg.com/c2c79ad5fa1629b1.png">
+<meta property="og:image" content="http://i3.piimg.com/cf0b5eb355dfb4cf.png">
+<meta property="og:image" content="http://i4.piimg.com/9462ab2173dcb1ac.png">
+<meta property="og:image" content="http://i2.piimg.com/1f8a6aa46acc72e2.png">
+<meta property="og:image" content="http://i4.piimg.com/ae8004ec7718464b.png">
+<meta property="og:image" content="http://i4.piimg.com/0931e0e795ffecb6.png">
+<meta property="og:image" content="http://i3.piimg.com/0e76cd4dde922713.png">
+<meta property="og:image" content="http://i3.piimg.com/ce9841870311a76d.png">
+<meta property="og:image" content="http://i3.piimg.com/2f8f72a1976e5986.png">
+<meta property="og:image" content="http://i2.piimg.com/43ac94b06a610b77.png">
+<meta property="og:image" content="http://i2.piimg.com/64257cc07be84763.png">
+<meta property="og:image" content="http://i2.piimg.com/4e881fef4bf47faf.png">
+<meta property="og:image" content="http://i4.piimg.com/f106e79280890e51.png">
+<meta property="og:image" content="http://i4.piimg.com/610b2831c914d145.png">
+<meta property="og:image" content="http://i3.piimg.com/503c85b3995b54d1.png">
+<meta property="og:image" content="http://i2.piimg.com/0c23f795ae0f03b3.png">
+<meta property="og:image" content="http://i2.piimg.com/a47f2dc2bd52f7fc.png">
+<meta property="og:image" content="http://i2.piimg.com/a0b27070abb2210b.png">
+<meta property="og:image" content="http://7xrn7f.com1.z0.glb.clouddn.com/16-5-3/66610926.jpg">
+<meta property="og:updated_time" content="2016-05-12T23:52:04.412Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub for Windows使用教程（一）">
+<meta name="twitter:description" content="GitHub for windows (一)前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17.0)
+什么是Github说到什么事github，我们先">
+<meta name="twitter:image" content="http://i3.piimg.com/2513fb0c843f35c9.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6254858898126145000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> GitHub for Windows使用教程（一） | ISLAND </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cf170cb9e5a06d54c1962ad8994f9b33";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ISLAND</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">随心随性</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+    
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于/留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                GitHub for Windows使用教程（一）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-03T19:09:42+08:00" content="2016-05-03">
+              2016-05-03
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/03/GitHub-for-Windows使用教程(一)/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/03/GitHub-for-Windows使用教程(一)/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/03/GitHub-for-Windows使用教程(一)/" class="leancloud_visitors" data-flag-title="GitHub for Windows使用教程（一）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="GitHub-for-windows-一"><a href="#GitHub-for-windows-一" class="headerlink" title="GitHub for windows (一)"></a>GitHub for windows (一)</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于<strong>GitHub for windows (3.0.17.0)</strong></p>
+<h2 id="什么是Github"><a href="#什么是Github" class="headerlink" title="什么是Github"></a>什么是Github</h2><p>说到什么事github，我们先看wikipedia的描述“<a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">GitHub是一个利用Git进行版本控制、专门用于存放软件代码与内容的共享虚拟主机服务。它由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。</a>”</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>下载<a href="https://desktop.github.com/" target="_blank" rel="external">github for windows</a>，安装这里不赘述。</li>
+<li><a href="https://github.com/" target="_blank" rel="external">注册github账号</a><br><img src="http://i3.piimg.com/2513fb0c843f35c9.png" alt=""></li>
+<li>登陆到github for windows。<br><img src="http://i2.piimg.com/7a331713c8a3f28e.png" alt=""></li>
+</ol>
+<hr>
+<p>准备工作都完了，我们开始正式学习。^_^</p>
+<h2 id="认识这些单词"><a href="#认识这些单词" class="headerlink" title="认识这些单词"></a>认识这些单词</h2><p>repository             仓库    ，我们所有的文件都保存在仓库里。<br>path 分支<br>| 单词            | 意思           | 介绍            |<br>| ————- |:———-:| —-    ——–:|<br>| repaoitory  |仓库         | 所有的文件都保存在仓库里 |<br>| path    | 分支    |   分支就是一条主线，代码的每次更新都会在一条分支下后面会继续介绍 |<br>| add | 添加    |    添加 |<br>|Create|创造|创造|<br>|Clone|克隆|复制,这个意思很好懂|<br>|Open in Explorer|打开资源管理器||</p>
+<h2 id="创建第一个代码库"><a href="#创建第一个代码库" class="headerlink" title="创建第一个代码库"></a>创建第一个代码库</h2><h3 id="认识界面"><a href="#认识界面" class="headerlink" title="认识界面"></a>认识界面</h3><p><img src="http://i2.piimg.com/c2c79ad5fa1629b1.png" alt=""><br>github for windows的界面非常清爽，的确符合geek的性质，个人表示非常喜欢。<br>我们来建立第一个仓库，点击左上角的<strong>+号</strong>，初次建立他会有一圈圈的涟漪，非常漂亮哦。<br>打开之后有三个选项，Add，Create，Clone。<br><img src="http://i3.piimg.com/cf0b5eb355dfb4cf.png" alt=""><br>我们分别来介绍一下这三个功能。</p>
+<h4 id="Add功能"><a href="#Add功能" class="headerlink" title="Add功能"></a>Add功能</h4><p>如果本地有工程，就可以使用Add添加<br><img src="http://i4.piimg.com/9462ab2173dcb1ac.png" alt=""></p>
+<h4 id="Clone功能"><a href="#Clone功能" class="headerlink" title="Clone功能"></a>Clone功能</h4><p>这个功能其实最好理解了，克隆这名字通俗易懂好理解。<br>如何使用Clone功能呢？<br><img src="http://i2.piimg.com/1f8a6aa46acc72e2.png" alt=""><br>就是将在浏览器上已经创建好的项目导入到本地，换句话说就是下载到本地。</p>
+<h4 id="Create功能"><a href="#Create功能" class="headerlink" title="Create功能"></a>Create功能</h4><p>创建一个代码库，<br>Name填写你的仓库名字。Local path写你将要保存在本地路径。我们主要从这个功能开始github之旅。<br><img src="http://i4.piimg.com/ae8004ec7718464b.png" alt=""><br>我们在这里填写First，来创建第一个我们自己的repaoitory。<br><img src="http://i4.piimg.com/0931e0e795ffecb6.png" alt=""></p>
+<h2 id="开始使用第一个代码库"><a href="#开始使用第一个代码库" class="headerlink" title="开始使用第一个代码库"></a>开始使用第一个代码库</h2><h3 id="修改第一个代码库中内容"><a href="#修改第一个代码库中内容" class="headerlink" title="修改第一个代码库中内容"></a>修改第一个代码库中内容</h3><p>我们来找到刚刚创建的代码库在本地的位置。就是刚刚在local path的地址路径，当然如果你忘了，请右键点击First。<br><img src="http://i3.piimg.com/0e76cd4dde922713.png" alt=""><br>选择Open in Explorer。这样我们就可以转到刚刚的路径下。<br>我们新建一个文本文档。在里面编辑。<br>如下<br><img src="http://i3.piimg.com/ce9841870311a76d.png" alt=""><br>此时的github就会变成这个样子(Changs)：<br><img src="http://i3.piimg.com/2f8f72a1976e5986.png" alt=""><br>你会发现此时github会出现刚刚编辑的内容。</p>
+<ol>
+<li>这个是测试文本</li>
+<li>你好<br>并且前面会有<strong>蓝色标识</strong>，那么这个<strong>蓝色标识</strong>是什么用呢？<br>其实这个蓝色标识是提示你会上改变的文本。比如我第一次只想改变<br><strong>这个是测试文本</strong>并不想把<strong>你好</strong>上传。<br>这时我们点击一下<strong>你好</strong>的前面的<strong>蓝色标识</strong>。<br><img src="http://i2.piimg.com/43ac94b06a610b77.png" alt=""><br>你会发现<strong>你好</strong>前面的蓝色标识没有了。<br>我们填写好<strong>Summer</strong>和<strong>Description</strong><br>Summer就是这次改动的总结，我们也可以理解为标题<em>（必填）</em>，而Description可以理解为详细概况<em>（选填）</em></li>
+</ol>
+<hr>
+<p>我们这里只选择第一个修改对象，也就是<strong>这个是测试文本</strong>就行修改。summer我们填写为<em>第一次修改</em>，Description我们填写为<em>增加了这个是测试文本</em>的内容，之后点击<strong>Commit to master</strong>。<br><img src="http://i2.piimg.com/64257cc07be84763.png" alt=""><br>切换到<strong>History</strong>目录下<br><img src="http://i2.piimg.com/4e881fef4bf47faf.png" alt=""><br>我们会发现他改变了。<br>这次我们把<strong>你好</strong>进行添加。<br><img src="http://i4.piimg.com/f106e79280890e51.png" alt=""><br>在<strong>History</strong>目录下发生了这样的改变。会在<strong>History</strong>目录下形成一天时间线，来指出每一次的修改标题和内容，同时会把修改的内容用<strong>绿色标识</strong>标出。<br>我们打开本地的文本，删除刚刚添加的第一行<strong>这个是测试文本</strong>。<br><img src="http://i4.piimg.com/610b2831c914d145.png" alt=""><br>此时你就会发现github发生了变化。<br><img src="http://i3.piimg.com/503c85b3995b54d1.png" alt=""><br>此时的<strong>红色标识</strong>标识删除。我们写好Summer和Description并点击Commit to master。<br>这样我们就删除了第一行。同时在<strong>History</strong>目录下又多了一条时间轴。<br><img src="http://i2.piimg.com/0c23f795ae0f03b3.png" alt=""><br>这样我们就完成了删除。</p>
+<h3 id="上传与同步"><a href="#上传与同步" class="headerlink" title="上传与同步"></a>上传与同步</h3><h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>此时，当我们打开github网页版，就会发现此时你的修改的内容并没有出现在这里。这是因为你没有进行同步，仅仅是在本地就行了修改。此时我们仅仅需要点击右上角的<strong>publish</strong><br><img src="http://i2.piimg.com/a47f2dc2bd52f7fc.png" alt=""><br>此时你就会本地内容已经上传到网页上。<br><img src="http://i2.piimg.com/a0b27070abb2210b.png" alt=""></p>
+<h4 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h4><p>当你的代码库上传后就会发现，原来的<strong>publish</strong>以及变为了<strong>Sync</strong>。<br><img src="http://7xrn7f.com1.z0.glb.clouddn.com/16-5-3/66610926.jpg" alt=""><br>点击<strong>Sync</strong>同步代码库！</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GitHub/" rel="tag">#GitHub</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/27/大学？大学？大学？/" rel="next" title="大学？大学？大学？">
+                <i class="fa fa-chevron-left"></i> 大学？大学？大学？
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/13/GitHub-for-Windows使用教程(二)/" rel="prev" title="GitHub for Windows使用教程(二)">
+                GitHub for Windows使用教程(二) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/03/GitHub-for-Windows使用教程(一)/"
+           data-title="GitHub for Windows使用教程（一）" data-url="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="杨晓辉" />
+          <p class="site-author-name" itemprop="name">杨晓辉</p>
+          <p class="site-description motion-element" itemprop="description">随心随性</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/youngxhui" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/young_xhui" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://zhihu.com/people/ai-zai-zuo-you" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-zhihu"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub-for-windows-一"><span class="nav-number">1.</span> <span class="nav-text">GitHub for windows (一)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Github"><span class="nav-number">1.2.</span> <span class="nav-text">什么是Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.3.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#认识这些单词"><span class="nav-number">1.4.</span> <span class="nav-text">认识这些单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建第一个代码库"><span class="nav-number">1.5.</span> <span class="nav-text">创建第一个代码库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#认识界面"><span class="nav-number">1.5.1.</span> <span class="nav-text">认识界面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Add功能"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">Add功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Clone功能"><span class="nav-number">1.5.1.2.</span> <span class="nav-text">Clone功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Create功能"><span class="nav-number">1.5.1.3.</span> <span class="nav-text">Create功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始使用第一个代码库"><span class="nav-number">1.6.</span> <span class="nav-text">开始使用第一个代码库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改第一个代码库中内容"><span class="nav-number">1.6.1.</span> <span class="nav-text">修改第一个代码库中内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传与同步"><span class="nav-number">1.6.2.</span> <span class="nav-text">上传与同步</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#上传"><span class="nav-number">1.6.2.1.</span> <span class="nav-text">上传</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同步"><span class="nav-number">1.6.2.2.</span> <span class="nav-text">同步</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨晓辉</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"youngxhui"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("KJrOP28KHYuX90Qe8AqbfHx1-gzGzoHsz", "4MGIGqTGkgtvx4uMDXH8IRr8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

@@ -1,0 +1,770 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="GitHub," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="GitHub for windows使用教程（三）团队协作流程认识FlowGitHub Flow是一个轻量级的，基于分支的工作流程，支持团队和部署在那里的定期做项目。
+为团队成员写入权限在我们的队友添加一个写的权限，这样我们的队友才能很好的修改代码。我们打开网页上的GitHub,点击settings,之后我们找到collaborators，这里会让我们验证密码，之后就有添加合作者的选项。这样我们就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub for windows使用教程（三）">
+<meta property="og:url" content="http://yoursite.com/2016/05/15/GitHub-for-windows使用教程（三）/index.html">
+<meta property="og:site_name" content="ISLAND">
+<meta property="og:description" content="GitHub for windows使用教程（三）团队协作流程认识FlowGitHub Flow是一个轻量级的，基于分支的工作流程，支持团队和部署在那里的定期做项目。
+为团队成员写入权限在我们的队友添加一个写的权限，这样我们的队友才能很好的修改代码。我们打开网页上的GitHub,点击settings,之后我们找到collaborators，这里会让我们验证密码，之后就有添加合作者的选项。这样我们就">
+<meta property="og:image" content="http://i2.buimg.com/8b0d6faa804a8ad4.png">
+<meta property="og:image" content="http://i2.buimg.com/7e09c01de3b7f7fc.png">
+<meta property="og:image" content="http://i3.buimg.com/7a0ebc9de0de35d7.png">
+<meta property="og:image" content="http://i3.buimg.com/d1b3a2e5d86938ea.png">
+<meta property="og:image" content="http://i3.buimg.com/072a6423fa4748f1.png">
+<meta property="og:image" content="http://i4.buimg.com/05161453c4b150ae.png">
+<meta property="og:image" content="http://i3.buimg.com/48f8170e7191f8f5.png">
+<meta property="og:image" content="http://i4.buimg.com/3ffad756f9982f10.png">
+<meta property="og:image" content="http://i4.buimg.com/39ee5274ec37a264.png">
+<meta property="og:image" content="http://i4.buimg.com/33d32b20fb2975b5.png">
+<meta property="og:image" content="http://i4.buimg.com/f0855426ab2e898c.png">
+<meta property="og:image" content="http://i4.buimg.com/04b4fc25367dcb4d.png">
+<meta property="og:image" content="http://i4.buimg.com/91a0c1835feadacd.png">
+<meta property="og:image" content="http://i4.buimg.com/56aa97ff1b02e0ab.png">
+<meta property="og:updated_time" content="2016-05-14T16:44:05.537Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub for windows使用教程（三）">
+<meta name="twitter:description" content="GitHub for windows使用教程（三）团队协作流程认识FlowGitHub Flow是一个轻量级的，基于分支的工作流程，支持团队和部署在那里的定期做项目。
+为团队成员写入权限在我们的队友添加一个写的权限，这样我们的队友才能很好的修改代码。我们打开网页上的GitHub,点击settings,之后我们找到collaborators，这里会让我们验证密码，之后就有添加合作者的选项。这样我们就">
+<meta name="twitter:image" content="http://i2.buimg.com/8b0d6faa804a8ad4.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6254858898126145000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> GitHub for windows使用教程（三） | ISLAND </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cf170cb9e5a06d54c1962ad8994f9b33";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ISLAND</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">随心随性</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+    
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于/留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                GitHub for windows使用教程（三）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-15T00:41:41+08:00" content="2016-05-15">
+              2016-05-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/15/GitHub-for-windows使用教程（三）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/15/GitHub-for-windows使用教程（三）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/15/GitHub-for-windows使用教程（三）/" class="leancloud_visitors" data-flag-title="GitHub for windows使用教程（三）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="GitHub-for-windows使用教程（三）"><a href="#GitHub-for-windows使用教程（三）" class="headerlink" title="GitHub for windows使用教程（三）"></a>GitHub for windows使用教程（三）</h1><h2 id="团队协作流程"><a href="#团队协作流程" class="headerlink" title="团队协作流程"></a>团队协作流程</h2><h3 id="认识Flow"><a href="#认识Flow" class="headerlink" title="认识Flow"></a>认识Flow</h3><p><strong><a href="https://guides.github.com/introduction/flow/" target="_blank" rel="external">GitHub Flow</a></strong>是一个轻量级的，基于分支的工作流程，支持团队和部署在那里的定期做项目。<br><img src="http://i2.buimg.com/8b0d6faa804a8ad4.png" alt=""></p>
+<h3 id="为团队成员写入权限"><a href="#为团队成员写入权限" class="headerlink" title="为团队成员写入权限"></a>为团队成员写入权限</h3><p>在我们的队友添加一个写的权限，这样我们的队友才能很好的修改代码。<br>我们打开网页上的<a href="http://www.github.com" target="_blank" rel="external">GitHub</a>,点击<strong>settings</strong>,<br><img src="http://i2.buimg.com/7e09c01de3b7f7fc.png" alt=""><br>之后我们找到<strong>collaborators</strong>，这里会让我们验证密码，之后就有添加合作者的选项。这样我们就能添加我们的小伙伴了！<br><img src="http://i3.buimg.com/7a0ebc9de0de35d7.png" alt=""><br>这样我们就添加了新的小伙伴，新的小伙伴有着同样的权限去修改和管理代码。<br>此时我们就会看到我的小伙伴wevan的github主页上就会出现关于我创建的First的各种通知。<br><img src="http://i3.buimg.com/d1b3a2e5d86938ea.png" alt=""></p>
+<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><p>在我们创建一个叫<strong>add new function</strong>的分支。</p>
+<blockquote>
+<p>创建一个分支<br><em>Create a branch</em><br>当你工作的一个项目，你会在任何给定的时间有一堆不同的功能或正在进行的想法 - 其中一些是蓄势待发，而另一些则不是。分支的存在是为了帮助你管理这个工作流程。<br><em>When you’re working on a project, you’re going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.</em><br>当您在项目中创建一个分支，你创造一个环境，在那里你可以尝试新的想法。你让一个分支的更改不会影响主分支，让你可以自由进行实验，并提交更改，在你的分支将不会被合并，直到它准备好知识安全的人所正在与合作进行审查。<br><em>When you create a branch in your project, you’re creating an environment where you can try out new ideas. Changes you make on a branch don’t affect the master branch, so you’re free to experiment and commit changes, safe in the knowledge that your branch won’t be merged until it’s ready to be reviewed by someone you’re collaborating with.</em><br>ProTip<br>分支在Git中是一个核心概念，整个GitHub的流量是基于它。这里只有一个规则：在任何主分支总是部署。<br><em>Branching is a core concept in Git, and the entire GitHub Flow is based upon it. There’s only one rule: anything in the master branch is always deployable.</em><br>正因为如此，这是非常重要的一个功能或修复工作时，你的新分支关老爷的创建。您的分支名应该是描述（例如，重构的身份验证，用户的内容缓存键，使视网膜-化身），以便其他人可以看到正在处理。<br><em>Because of this, it’s extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive (e.g., refactor-authentication, user-content-cache-key, make-retina-avatars), so that others can see what is being worked on.</em><br><strong><a href="https://guides.github.com/introduction/flow/" target="_blank" rel="external">来自GitHub Flow</a></strong></p>
+</blockquote>
+<h3 id="添加提交"><a href="#添加提交" class="headerlink" title="添加提交"></a>添加提交</h3><p><img src="http://i3.buimg.com/072a6423fa4748f1.png" alt=""><br>我们首先把分支切换到新的分支上<strong>add new function</strong><br><img src="http://i4.buimg.com/05161453c4b150ae.png" alt=""><br>修改新的版本<br><img src="http://i3.buimg.com/48f8170e7191f8f5.png" alt=""><br>填写好新的<strong>Summary</strong>和<strong>Description</strong>，提交新的版本并同步。<br>这样小伙伴登陆到<strong>GitHub</strong>上就看到了就可以清楚的看到一切的修改。<br><img src="http://i4.buimg.com/3ffad756f9982f10.png" alt=""></p>
+<blockquote>
+<p>添加提交<br><em>Add commits</em><br>一旦你的分支已经建立，现在是时候开始进行更改。无论何时添加，编辑或删除一个文件，你作出承诺，并将其添加到您的分支。提交加入这一过程保持你的进步轨迹，你在一个特性分支工作。<br><em>Once your branch has been created, it’s time to start making changes. Whenever you add, edit, or delete a file, you’re making a commit, and adding them to your branch. This process of adding commits keeps track of your progress as you work on a feature branch.</em><br>还承诺创建工作的透明历史，其他人可以按照理解你做了什么，以及为什么。每次提交都有一个关联的提交信息，这是解释为什么一个特定的变化作出了说明。此外，每次提交被认为是变革的一个独立单元。这使您可以回滚的变化，如果发现错误，或者如果你决定在一个不同的方向前进。<br><em>Commits also create a transparent history of your work that others can follow to understand what you’ve done and why. Each commit has an associated commit message, which is a description explaining why a particular change was made. Furthermore, each commit is considered a separate unit of change. This lets you roll back changes if a bug is found, or if you decide to head in a different direction.</em><br>ProTip</p>
+</blockquote>
+<p>提交信息是重要的，特别是因为Git跟踪更改，然后将它们显示为承诺一旦他们推到服务器。通过字迹清晰提交信息，你可以更容易为其他人跟着，并提供反馈。<br><em>Commit messages are important, especially since Git tracks your changes and then displays them as commits once they’re pushed to the server. By writing clear commit messages, you can make it easier for other people to follow along and provide feedback.</em><br><strong><a href="https://guides.github.com/introduction/flow/" target="_blank" rel="external">来自GitHub Flow</a></strong></p>
+<h3 id="打开一个pull请求"><a href="#打开一个pull请求" class="headerlink" title="打开一个pull请求"></a>打开一个pull请求</h3><p><img src="http://i4.buimg.com/39ee5274ec37a264.png" alt=""><br>这个是整个流程中比较关键的一步，发布<strong>Pull Request</strong>。<br><img src="http://i4.buimg.com/33d32b20fb2975b5.png" alt=""><br>点击客户端或者网页上的<strong>Pull Request</strong>发布。<br>我们这里点击<strong>Pull Request</strong><br><img src="http://i4.buimg.com/f0855426ab2e898c.png" alt="客户端/网页版"><br>我们填写好必要的说明性文字<br><img src="http://i4.buimg.com/04b4fc25367dcb4d.png" alt=""><br>点击<strong>Send Pull Request</strong><br><img src="http://i4.buimg.com/91a0c1835feadacd.png" alt=""><br>他既然让我们到GitHub上看，我们就听他的，点击，进入。<br><img src="http://i4.buimg.com/56aa97ff1b02e0ab.png" alt=""><br>我们发现小伙伴已经在下面留言了！<br>之后不断的讨论，不断的进行版本的迭代。</p>
+<blockquote>
+<p>打开一个pull请求<br>Open a Pull Request<br>引入请求启动你的提交讨论中。因为他们紧密地与底层的Git仓库集成，任何人都可以清楚地看到什么样的变化将合并，如果他们接受你的要求。<br>Pull Requests initiate discussion about your commits. Because they’re tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.<br>您可以在开发过程中打开的任何一点一拉请求：当你有很少或没有代码，但想分享一些截图或一般的想法，当你被卡住，需要帮助或建议，或者当你准备的人检查工作。通过在您的拉请求消息使用GitHub的@mention系统，你可以要求某个人或团队的反馈，无论他们是在大厅或十个时区了。<br>You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you’re stuck and need help or advice, or when you’re ready for someone to review your work. By using GitHub’s @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they’re down the hall or ten time zones away.<br>ProTip<br>引入请求是促进开源项目和变更管理共享存储库非常有用。如果您使用的是叉和拉模式，引入请求提供了一种方式来通知你希望他们考虑改变项目的维护者。如果你使用一个共享的存储库模式，引入请求帮助启动代码审查和谈话有关建议更改它们合并到主分支之前。<br>Pull Requests are useful for contributing to open source projects and for managing changes to shared repositories. If you’re using a Fork &amp; Pull Model, Pull Requests provide a way to notify project maintainers about the changes you’d like them to consider. If you’re using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they’re merged into the master branch.<br><strong><a href="https://guides.github.com/introduction/flow/" target="_blank" rel="external">来自GitHub Flow</a></strong></p>
+</blockquote>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GitHub/" rel="tag">#GitHub</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/13/GitHub-for-Windows使用教程(二)/" rel="next" title="GitHub for Windows使用教程(二)">
+                <i class="fa fa-chevron-left"></i> GitHub for Windows使用教程(二)
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/15/GitHub-for-windows使用教程（三）/"
+           data-title="GitHub for windows使用教程（三）" data-url="http://yoursite.com/2016/05/15/GitHub-for-windows使用教程（三）/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="杨晓辉" />
+          <p class="site-author-name" itemprop="name">杨晓辉</p>
+          <p class="site-description motion-element" itemprop="description">随心随性</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/youngxhui" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/young_xhui" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://zhihu.com/people/ai-zai-zuo-you" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-zhihu"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub-for-windows使用教程（三）"><span class="nav-number">1.</span> <span class="nav-text">GitHub for windows使用教程（三）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#团队协作流程"><span class="nav-number">1.1.</span> <span class="nav-text">团队协作流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#认识Flow"><span class="nav-number">1.1.1.</span> <span class="nav-text">认识Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为团队成员写入权限"><span class="nav-number">1.1.2.</span> <span class="nav-text">为团队成员写入权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建分支"><span class="nav-number">1.1.3.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加提交"><span class="nav-number">1.1.4.</span> <span class="nav-text">添加提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开一个pull请求"><span class="nav-number">1.1.5.</span> <span class="nav-text">打开一个pull请求</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨晓辉</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"youngxhui"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("KJrOP28KHYuX90Qe8AqbfHx1-gzGzoHsz", "4MGIGqTGkgtvx4uMDXH8IRr8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

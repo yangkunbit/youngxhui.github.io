@@ -1,0 +1,791 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="生活,蓝桥杯," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获  下面会列出我做的题和做题时的感受
+
+
+1.煤球数目有一堆煤球，堆成三角棱锥形。具体： 第一层放1个，第二层3个（排列成三角形），第三层6个（排列成三角形），第四层10个（排列成三角形），….如果一共有100层，共有多少个煤球？请填表示煤球总数目的数字。注意：你提交的应该是一个整数，不要填">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一次参加蓝桥杯感受">
+<meta property="og:url" content="http://yoursite.com/2016/04/21/第一次参加蓝桥杯感受/index.html">
+<meta property="og:site_name" content="ISLAND">
+<meta property="og:description" content="作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获  下面会列出我做的题和做题时的感受
+
+
+1.煤球数目有一堆煤球，堆成三角棱锥形。具体： 第一层放1个，第二层3个（排列成三角形），第三层6个（排列成三角形），第四层10个（排列成三角形），….如果一共有100层，共有多少个煤球？请填表示煤球总数目的数字。注意：你提交的应该是一个整数，不要填">
+<meta property="og:image" content="http://img.blog.csdn.net/20160320152805039">
+<meta property="og:image" content="http://img.blog.csdn.net/20160320154048055">
+<meta property="og:updated_time" content="2016-04-21T07:17:49.315Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="第一次参加蓝桥杯感受">
+<meta name="twitter:description" content="作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获  下面会列出我做的题和做题时的感受
+
+
+1.煤球数目有一堆煤球，堆成三角棱锥形。具体： 第一层放1个，第二层3个（排列成三角形），第三层6个（排列成三角形），第四层10个（排列成三角形），….如果一共有100层，共有多少个煤球？请填表示煤球总数目的数字。注意：你提交的应该是一个整数，不要填">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160320152805039">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6254858898126145000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 第一次参加蓝桥杯感受 | ISLAND </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cf170cb9e5a06d54c1962ad8994f9b33";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ISLAND</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">随心随性</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+    
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于/留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                第一次参加蓝桥杯感受
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-21T10:30:58+08:00" content="2016-04-21">
+              2016-04-21
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/21/第一次参加蓝桥杯感受/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/21/第一次参加蓝桥杯感受/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/21/第一次参加蓝桥杯感受/" class="leancloud_visitors" data-flag-title="第一次参加蓝桥杯感受">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>  作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获<br>  下面会列出我做的题和做题时的感受</p>
+<hr>
+<blockquote>
+<h2 id="1-煤球数目"><a href="#1-煤球数目" class="headerlink" title="1.煤球数目"></a>1.煤球数目</h2><p>有一堆煤球，堆成三角棱锥形。具体：<br> 第一层放1个，<br>第二层3个（排列成三角形），<br>第三层6个（排列成三角形），<br>第四层10个（排列成三角形），<br>….<br>如果一共有100层，共有多少个煤球？<br>请填表示煤球总数目的数字。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>这个题的第一反应我是用excel做，用excel生成有序的数列，结果建立了excel后出现的是小树，瞬间懵逼…………只好一步一步的写代码，按理说这应该是一个简单的代码，可是我还是写错了，在我记忆里好像写的是5050……额，好心痛……</p>
+<hr>
+<blockquote>
+<h2 id="2-生日蜡烛"><a href="#2-生日蜡烛" class="headerlink" title="2.生日蜡烛"></a>2.生日蜡烛</h2><p>某君从某年开始每年都举办一次生日party，并且每次都要吹熄与年龄相同根数的蜡烛。<br>现在算起来，他一共吹熄了236根蜡烛。<br>请问，他从多少岁开始过生日party的？<br>请填写他开始过生日party的年龄数。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>这个题的第一反应还是excel表，最后我的确是用excel做出来了，也是这次比赛中唯一做对的题目。虽然用excel比较麻烦，但是对于我这种第一时间没有一个很好的明确思路的我来说，这样很快。</p>
+<hr>
+<blockquote>
+<h2 id="3-凑算式"><a href="#3-凑算式" class="headerlink" title="3.凑算式"></a>3.凑算式</h2><p><img src="http://img.blog.csdn.net/20160320152805039" alt="图1.1"><br>这个算式中A~I代表1~9的数字，不同的字母代表不同的数字。<br>比如：<br>6+8/3+952/714 就是一种解法，<br>5+3/1+972/486 是另一种解法。<br>这个算式一共有多少种解法？<br>注意：你提交应该是个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>很简单的暴力求解，为什么我没有做对呢…………开始的时候题的要求是0~9，后来改为1~9，可惜，我们考场没有收到任何通知…………我按0~9算的……悲哀的人生</p>
+<hr>
+<p>做到这里的时候好像时间就过去了一个半小时了，实在是太慢了，也侧面说面对算法不熟练……</p>
+<hr>
+<blockquote>
+<h2 id="4-快速排序"><a href="#4-快速排序" class="headerlink" title="4.快速排序"></a>4.快速排序</h2><p>排序在各种场合经常被用到。<br>快速排序是十分常用的高效率的算法。<br>其思想是：先选一个“标尺”，<br>用它把整个队列过一遍筛子，<br>以保证：其左边的元素都不大于它，其右边的元素都不小于它。<br>这样，排序问题就被分割为两个子区间。<br>再分别对子区间排序就可以了。<br>下面的代码是一种实现，请分析并填写划线部分缺少的代码。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">void swap(int a[], int i, int j)</span><br><span class="line">&#123;</span><br><span class="line">    int t = a[i];</span><br><span class="line">    a[i] = a[j];</span><br><span class="line">    a[j] = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int partition(int a[], int p, int r)</span><br><span class="line">&#123;</span><br><span class="line">    int i = p;</span><br><span class="line">    int j = r + 1;</span><br><span class="line">    int x = a[p];</span><br><span class="line">    while(1)&#123;</span><br><span class="line">        while(i&lt;r &amp;&amp; a[++i]&lt;x);</span><br><span class="line">        while(a[--j]&gt;x);</span><br><span class="line">        if(i&gt;=j) break;</span><br><span class="line">        swap(a,i,j);</span><br><span class="line">    &#125;</span><br><span class="line">    ______________________;</span><br><span class="line">    return j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void quicksort(int a[], int p, int r)</span><br><span class="line">&#123;</span><br><span class="line">    if(p&lt;r)&#123;</span><br><span class="line">        int q = partition(a,p,r);</span><br><span class="line">        quicksort(a,p,q-1);</span><br><span class="line">        quicksort(a,q+1,r);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    int a[] = &#123;5,13,6,24,2,8,19,27,6,12,1,17&#125;;</span><br><span class="line">    int N = 12;</span><br><span class="line"></span><br><span class="line">    quicksort(a, 0, N-1);</span><br><span class="line"></span><br><span class="line">    for(i=0; i&lt;N; i++) printf(&quot;%d &quot;, a[i]);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其实第一眼看到快速排序就有点后悔，因为之前看过，但是没有记住，当时并没有重视。so，这个题自然是做错了。</p>
+<hr>
+<blockquote>
+<p>##5.抽签<br>X星球要派出一个5人组成的观察团前往W星。<br>其中：<br>A国最多可以派出4人。<br>B国最多可以派出2人。<br>C国最多可以派出2人。<br>….<br>那么最终派往W星的观察团会有多少种国别的不同组合呢？<br>下面的程序解决了这个问题。<br>数组a[] 中既是每个国家可以派出的最多的名额。<br>程序执行结果为：<br>DEFFF<br>CEFFF<br>CDFFF<br>CDEFF<br>CCFFF<br>CCEFF<br>CCDFF<br>CCDEF<br>BEFFF<br>BDFFF<br>BDEFF<br>BCFFF<br>BCEFF<br>BCDFF<br>BCDEF<br>….<br>(以下省略，总共101行)</p>
+</blockquote>
+<p>没做出来</p>
+<hr>
+<blockquote>
+<h2 id="6-方格填数"><a href="#6-方格填数" class="headerlink" title="6.方格填数"></a>6.方格填数</h2><p><img src="http://img.blog.csdn.net/20160320154048055" alt="1.2"><br>填入0~9的数字。要求：连续的两个数字不能相邻。<br>（左右、上下、对角都算相邻）<br>一共有多少种可能的填数方案？<br>请填写表示方案数目的整数。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>这个题我是把每个格子标了序号，用暴力求解满足条件，好像我算的是400。额，有错了，好吧，我仅仅是做到这里。</p>
+<hr>
+<p>虽然我没有做完吧，甚至只做对了一道题，但是我想说，大一才刚刚开始，权当锻炼，而且还有很大的收获，以后要努力喽。</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/生活/" rel="tag">#生活</a>
+          
+            <a href="/tags/蓝桥杯/" rel="tag">#蓝桥杯</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/20/我一直都在/" rel="next" title="我一直都在">
+                <i class="fa fa-chevron-left"></i> 我一直都在
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/21/清除右键无效项/" rel="prev" title="清除右键无效项">
+                清除右键无效项 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/21/第一次参加蓝桥杯感受/"
+           data-title="第一次参加蓝桥杯感受" data-url="http://yoursite.com/2016/04/21/第一次参加蓝桥杯感受/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="杨晓辉" />
+          <p class="site-author-name" itemprop="name">杨晓辉</p>
+          <p class="site-description motion-element" itemprop="description">随心随性</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/youngxhui" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/young_xhui" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://zhihu.com/people/ai-zai-zuo-you" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-zhihu"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-煤球数目"><span class="nav-number">1.</span> <span class="nav-text">1.煤球数目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-生日蜡烛"><span class="nav-number">2.</span> <span class="nav-text">2.生日蜡烛</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-凑算式"><span class="nav-number">3.</span> <span class="nav-text">3.凑算式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-快速排序"><span class="nav-number">4.</span> <span class="nav-text">4.快速排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-方格填数"><span class="nav-number">5.</span> <span class="nav-text">6.方格填数</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨晓辉</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"youngxhui"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("KJrOP28KHYuX90Qe8AqbfHx1-gzGzoHsz", "4MGIGqTGkgtvx4uMDXH8IRr8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
