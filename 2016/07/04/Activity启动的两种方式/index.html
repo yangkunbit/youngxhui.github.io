@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android," />
+  <meta name="keywords" content="android," />
 
 
 
@@ -81,19 +81,22 @@
 
 
 <meta name="description" content="今天学习Android的Intent的使用
-显示使用显示Intent就是指定Activity。123456789101112131415161718192021222324package com.example.myapplication;import android.content.Intent;import android.support.v7.app.AppCompatActivity;im">
+显示使用显示Intent就是指定Activity。
+123456789101112131415161718192021222324package com.example.myapplication;import android.content.Intent;import android.support.v7.app.AppCompatActivity;i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Activity启动的两种方式">
 <meta property="og:url" content="http://yoursite.com/2016/07/04/Activity启动的两种方式/index.html">
 <meta property="og:site_name" content="ISLAND">
 <meta property="og:description" content="今天学习Android的Intent的使用
-显示使用显示Intent就是指定Activity。123456789101112131415161718192021222324package com.example.myapplication;import android.content.Intent;import android.support.v7.app.AppCompatActivity;im">
+显示使用显示Intent就是指定Activity。
+123456789101112131415161718192021222324package com.example.myapplication;import android.content.Intent;import android.support.v7.app.AppCompatActivity;i">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/16-7-4/10084251.jpg">
-<meta property="og:updated_time" content="2016-08-05T08:51:36.708Z">
+<meta property="og:updated_time" content="2016-08-05T10:01:22.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Activity启动的两种方式">
 <meta name="twitter:description" content="今天学习Android的Intent的使用
-显示使用显示Intent就是指定Activity。123456789101112131415161718192021222324package com.example.myapplication;import android.content.Intent;import android.support.v7.app.AppCompatActivity;im">
+显示使用显示Intent就是指定Activity。
+123456789101112131415161718192021222324package com.example.myapplication;import android.content.Intent;import android.support.v7.app.AppCompatActivity;i">
 <meta name="twitter:image" content="http://7xt81u.com1.z0.glb.clouddn.com/16-7-4/10084251.jpg">
 
 
@@ -320,7 +323,8 @@
 
       
         <p>今天学习Android的Intent的使用</p>
-<h2 id="显示使用"><a href="#显示使用" class="headerlink" title="显示使用"></a>显示使用</h2><p>显示Intent就是指定Activity。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.myapplication;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Intent;</span><br><span class="line"><span class="keyword">import</span> android.support.v7.app.AppCompatActivity;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        findViewById(R.id.btnStartMyAty).setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line">                startActivity(<span class="keyword">new</span> Intent(MainActivity.<span class="keyword">this</span>, MyAty.class));</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="显示使用"><a href="#显示使用" class="headerlink" title="显示使用"></a>显示使用</h2><p>显示Intent就是指定Activity。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.myapplication;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Intent;</span><br><span class="line"><span class="keyword">import</span> android.support.v7.app.AppCompatActivity;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        findViewById(R.id.btnStartMyAty).setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line">                startActivity(<span class="keyword">new</span> Intent(MainActivity.<span class="keyword">this</span>, MyAty.class));</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>通过Intent直接指定一个Activity</p>
 <h2 id="隐式Intent"><a href="#隐式Intent" class="headerlink" title="隐式Intent"></a>隐式Intent</h2><p>创建一个Intent，但是并不指定启动的Activiy，有很多启动方式。</p>
 <h3 id="配置AndroidManiFest-xml中的activity"><a href="#配置AndroidManiFest-xml中的activity" class="headerlink" title="配置AndroidManiFest.xml中的activity"></a>配置AndroidManiFest.xml中的activity</h3><blockquote>
@@ -379,7 +383,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android/" rel="tag">#Android</a>
+            <a href="/tags/android/" rel="tag">#android</a>
           
         </div>
       
@@ -470,7 +474,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -480,7 +484,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
