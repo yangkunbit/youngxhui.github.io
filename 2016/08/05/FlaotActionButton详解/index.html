@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java," />
+  <meta name="keywords" content="Android," />
 
 
 
@@ -80,34 +80,30 @@
 
 
 
-<meta name="description" content="集合的遍历使用IteratorIterator主要用于遍历集合中的Collection元素，因此Iterator创建的对象是一个迭代器。
+<meta name="description" content="今天把Android的学习的一些东西记录一下，方便日后使用。
+FlaotActionButton详解FlaotActionButton是android的一个很好用的控件。在看了很多源码后逐步掌握一些知识了。
 
-Iterator提供的四个方法
-boolean hasNext(): 如果迭代器的集合还没有被遍历完，返回ture。
-Object next():返回集合里的下一个元素。
-void remove():删除集合里上一次next方法返回的元素。
-void forE">
+导入依赖项首先要在build.gradle中导入依赖项
+12345678dependencies &amp;#123;    compile fileTree(include: [&apos;*.jar&apos;],">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java集合遍历">
-<meta property="og:url" content="http://yoursite.com/2016/05/23/Java集合遍历/index.html">
+<meta property="og:title" content="FlaotActionButton详解">
+<meta property="og:url" content="http://yoursite.com/2016/08/05/FlaotActionButton详解/index.html">
 <meta property="og:site_name" content="ISLAND">
-<meta property="og:description" content="集合的遍历使用IteratorIterator主要用于遍历集合中的Collection元素，因此Iterator创建的对象是一个迭代器。
+<meta property="og:description" content="今天把Android的学习的一些东西记录一下，方便日后使用。
+FlaotActionButton详解FlaotActionButton是android的一个很好用的控件。在看了很多源码后逐步掌握一些知识了。
 
-Iterator提供的四个方法
-boolean hasNext(): 如果迭代器的集合还没有被遍历完，返回ture。
-Object next():返回集合里的下一个元素。
-void remove():删除集合里上一次next方法返回的元素。
-void forE">
-<meta property="og:updated_time" content="2016-05-23T11:56:47.369Z">
+导入依赖项首先要在build.gradle中导入依赖项
+12345678dependencies &amp;#123;    compile fileTree(include: [&apos;*.jar&apos;],">
+<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/5798408d91ee074073000000.gif">
+<meta property="og:updated_time" content="2016-08-05T09:29:21.900Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java集合遍历">
-<meta name="twitter:description" content="集合的遍历使用IteratorIterator主要用于遍历集合中的Collection元素，因此Iterator创建的对象是一个迭代器。
+<meta name="twitter:title" content="FlaotActionButton详解">
+<meta name="twitter:description" content="今天把Android的学习的一些东西记录一下，方便日后使用。
+FlaotActionButton详解FlaotActionButton是android的一个很好用的控件。在看了很多源码后逐步掌握一些知识了。
 
-Iterator提供的四个方法
-boolean hasNext(): 如果迭代器的集合还没有被遍历完，返回ture。
-Object next():返回集合里的下一个元素。
-void remove():删除集合里上一次next方法返回的元素。
-void forE">
+导入依赖项首先要在build.gradle中导入依赖项
+12345678dependencies &amp;#123;    compile fileTree(include: [&apos;*.jar&apos;],">
+<meta name="twitter:image" content="http://7xt81u.com1.z0.glb.clouddn.com/5798408d91ee074073000000.gif">
 
 
 
@@ -125,7 +121,7 @@ void forE">
   };
 </script>
 
-  <title> Java集合遍历 | ISLAND </title>
+  <title> FlaotActionButton详解 | ISLAND </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -276,7 +272,7 @@ void forE">
             
             
               
-                Java集合遍历
+                FlaotActionButton详解
               
             
           </h1>
@@ -288,8 +284,8 @@ void forE">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-23T19:53:58+08:00" content="2016-05-23">
-              2016-05-23
+            <time itemprop="dateCreated" datetime="2016-08-05T16:49:58+08:00" content="2016-08-05">
+              2016-08-05
             </time>
           </span>
 
@@ -299,8 +295,8 @@ void forE">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/23/Java集合遍历/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/23/Java集合遍历/" itemprop="commentsCount"></span>
+                <a href="/2016/08/05/FlaotActionButton详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/05/FlaotActionButton详解/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -310,7 +306,7 @@ void forE">
 
           
           
-             <span id="/2016/05/23/Java集合遍历/" class="leancloud_visitors" data-flag-title="Java集合遍历">
+             <span id="/2016/08/05/FlaotActionButton详解/" class="leancloud_visitors" data-flag-title="FlaotActionButton详解">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -332,26 +328,28 @@ void forE">
       
 
       
-        <h1 id="集合的遍历"><a href="#集合的遍历" class="headerlink" title="集合的遍历"></a>集合的遍历</h1><h2 id="使用Iterator"><a href="#使用Iterator" class="headerlink" title="使用Iterator"></a>使用Iterator</h2><p>Iterator主要用于遍历集合中的Collection元素，因此Iterator创建的对象是一个迭代器。</p>
-<hr>
-<h3 id="Iterator提供的四个方法"><a href="#Iterator提供的四个方法" class="headerlink" title="Iterator提供的四个方法"></a>Iterator提供的四个方法</h3><ul>
-<li>boolean hasNext(): 如果迭代器的集合还没有被遍历完，返回ture。</li>
-<li>Object next():返回集合里的下一个元素。</li>
-<li>void remove():删除集合里上一次next方法返回的元素。</li>
-<li>void forEachRemaining(Consumer action)：这个是java 8为Iterator新增的默认方法，该方法可使用Lambda表达式遍历所有的集合元素。</li>
-</ul>
-<hr>
-<h3 id="next方法"><a href="#next方法" class="headerlink" title="next方法"></a>next方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by 晓辉 on 2016/5/23.</span><br><span class="line"> * 使用jdk8中的iterator遍历集合；</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IteraorTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List books=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        books.add(<span class="string">"fengk"</span>);</span><br><span class="line">        books.add(<span class="string">"niaho"</span>);</span><br><span class="line">        Iterator it=books.iterator();</span><br><span class="line">        <span class="keyword">while</span> (it.hasNext())&#123;</span><br><span class="line">            it.next();</span><br><span class="line">            <span class="keyword">if</span>(books.equals(<span class="string">"fengk"</span>))&#123;</span><br><span class="line">                it.remove();</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(it.next());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&gt; 输出结果</span><br><span class="line">&gt;niaho</span><br></pre></td></tr></table></figure>
-<p>Iterator只用于遍历集合，本身本身并不具有承装对象的能力。如果需要就要创建Iterator对象，则必须有一个被迭代的集合。Iterator必须依附于Collection对象，若有一个Iterator对象，则必然有一个与之关联的Collection对象。</p>
-<h2 id="使用Lambda表达式遍历Iterator"><a href="#使用Lambda表达式遍历Iterator" class="headerlink" title="使用Lambda表达式遍历Iterator"></a>使用Lambda表达式遍历Iterator</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Collection;</span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by 晓辉 on 2016/5/23.</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IteratorEach</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 创建一个集合</span></span><br><span class="line">        Collection books=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        books.add(<span class="string">"java"</span>);</span><br><span class="line">        books.add(<span class="string">"c#"</span>);</span><br><span class="line">        Iterator it=books.iterator();</span><br><span class="line">        <span class="comment">// 使用Lambda表达式遍历所有的集合</span></span><br><span class="line">        it.forEachRemaining(obj-&gt;System.out.println(obj));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>输出结果<br>c#<br>java</p>
-</blockquote>
-<p><strong>注意：</strong>这里的输出是倒序。</p>
-<hr>
-<p>##使用foreach遍历集合元素<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Collection;</span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ForeachTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 创建一个集合</span></span><br><span class="line">        Collection books=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        books.add(<span class="string">"java"</span>);</span><br><span class="line">        books.add(<span class="string">"c#"</span>);</span><br><span class="line">        <span class="keyword">for</span>(Object obj:books)&#123;</span><br><span class="line"><span class="comment">//            此处的books变量也不是集合的本身元素</span></span><br><span class="line">            String book=(String)obj;</span><br><span class="line">            System.out.println(book);</span><br><span class="line">            <span class="keyword">if</span> (book.equals(<span class="string">"java"</span>))&#123;</span><br><span class="line">                books.remove(book);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(books);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>for循环中的迭代变量也不是集合元素本身，系统只是以此把集合元素的值赋值给迭代变量，因此for循环中修改的迭代变量的值是也是没有任何意义。</p>
-<hr>
+        <pre><code>今天把Android的学习的一些东西记录一下，方便日后使用。
+</code></pre><h1 id="FlaotActionButton详解"><a href="#FlaotActionButton详解" class="headerlink" title="FlaotActionButton详解"></a>FlaotActionButton详解</h1><p>FlaotActionButton是android的一个很好用的控件。<br>在看了很多源码后逐步掌握一些知识了。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/5798408d91ee074073000000.gif" alt=""></p>
+<h2 id="导入依赖项"><a href="#导入依赖项" class="headerlink" title="导入依赖项"></a>导入依赖项</h2><p>首先要在build.gradle中导入依赖项</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">    <span class="keyword">compile</span> <span class="keyword">fileTree</span>(<span class="keyword">include</span>: [<span class="string">'*.jar'</span>], dir: <span class="string">'libs'</span>)</span><br><span class="line">    testCompile <span class="string">'junit:junit:4.12'</span></span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.android.support:appcompat-v7:24.1.1'</span></span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.android.support:design:24.1.1'</span></span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.getbase:floatingactionbutton:1.10.1'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/futuresimple/android-floating-action-button" target="_blank" rel="external">GitHub地址</a></p>
+<p>代码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">com.getbase.floatingactionbutton.FloatingActionsMenu</span></span><br><span class="line">        <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span><br><span class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span><br><span class="line">        <span class="attr">android:layout_alignParentBottom</span>=<span class="string">"true"</span></span><br><span class="line">        <span class="attr">android:layout_alignParentEnd</span>=<span class="string">"true"</span></span><br><span class="line">        <span class="attr">android:layout_marginBottom</span>=<span class="string">"31dp"</span></span><br><span class="line">        <span class="attr">android:layout_marginEnd</span>=<span class="string">"32dp"</span></span><br><span class="line">        <span class="attr">app:fab_addButtonSize</span>=<span class="string">"normal"</span></span><br><span class="line">        <span class="attr">app:fab_labelStyle</span>=<span class="string">"@style/menu_labels_style"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">com.getbase.floatingactionbutton.FloatingActionButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/fab_carm"</span></span><br><span class="line">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span><br><span class="line">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span><br><span class="line">            <span class="attr">app:backgroundTint</span>=<span class="string">"@color/colorPrimary"</span></span><br><span class="line">            <span class="attr">app:fabSize</span>=<span class="string">"mini"</span></span><br><span class="line">            <span class="attr">app:fab_title</span>=<span class="string">"拍照"</span></span><br><span class="line">            <span class="attr">fab:fab_icon</span>=<span class="string">"@drawable/ic_add_a_photo_black_24dp"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">com.getbase.floatingactionbutton.FloatingActionButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/fab_etid"</span></span><br><span class="line">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span><br><span class="line">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span><br><span class="line">            <span class="attr">app:fabSize</span>=<span class="string">"mini"</span></span><br><span class="line">            <span class="attr">app:fab_title</span>=<span class="string">"录入"</span></span><br><span class="line">            <span class="attr">fab:fab_icon</span>=<span class="string">"@drawable/ic_border_color_black_24dp"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">com.getbase.floatingactionbutton.FloatingActionButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/fab_pic"</span></span><br><span class="line">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span><br><span class="line">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span><br><span class="line">            <span class="attr">app:fabSize</span>=<span class="string">"mini"</span></span><br><span class="line">            <span class="attr">app:fab_title</span>=<span class="string">"识别图片"</span></span><br><span class="line">            <span class="attr">fab:fab_icon</span>=<span class="string">"@drawable/ic_photo_black_24dp"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">com.getbase.floatingactionbutton.FloatingActionsMenu</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>要适配<code>menu_labels_style</code>才可以使用FloatingActionsMenu<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">"menu_labels_style"</span>&gt;</span><span class="xml"></span><br><span class="line">        <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:background"</span>&gt;</span>@drawable/fab_label_background<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:textColor"</span>&gt;</span>@color/white<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>适配<code>fab_label_background</code></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+    &lt;solid android:color=&quot;@color/black_semi_transparent&quot;/&gt;
+    &lt;padding
+        android:left=&quot;16dp&quot;
+        android:top=&quot;4dp&quot;
+        android:right=&quot;16dp&quot;
+        android:bottom=&quot;4dp&quot;/&gt;
+    &lt;corners
+        android:radius=&quot;2dp&quot;/&gt;
+&lt;/shape&gt;
+</code></pre><h2 id="解析FloatActionButton代码"><a href="#解析FloatActionButton代码" class="headerlink" title="解析FloatActionButton代码"></a>解析FloatActionButton代码</h2><p>FloatActionButton中<br>通过<strong>app:fabSize</strong>来确定大小<strong>normal</strong>，<strong>mini</strong>，<strong>auto</strong>。<br>通过<strong>app:fab_title</strong>设置文字。<br><strong>fab:fab_icon</strong>设置图标。</p>
 
       
     </div>
@@ -372,7 +370,7 @@ void forE">
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag">#java</a>
+            <a href="/tags/Android/" rel="tag">#Android</a>
           
         </div>
       
@@ -381,17 +379,13 @@ void forE">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/15/GitHub-for-windows使用教程（三）/" rel="next" title="GitHub for windows使用教程（三）">
-                <i class="fa fa-chevron-left"></i> GitHub for windows使用教程（三）
+              <a href="/2016/07/21/AndroidManifest-xml详细介绍/" rel="next" title="AndroidManifest.xml详细介绍">
+                <i class="fa fa-chevron-left"></i> AndroidManifest.xml详细介绍
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/04/Activity启动的两种方式/" rel="prev" title="Activity启动的两种方式">
-                Activity启动的两种方式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -417,8 +411,8 @@ void forE">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/23/Java集合遍历/"
-           data-title="Java集合遍历" data-url="http://yoursite.com/2016/05/23/Java集合遍历/">
+      <div class="ds-thread" data-thread-key="2016/08/05/FlaotActionButton详解/"
+           data-title="FlaotActionButton详解" data-url="http://yoursite.com/2016/08/05/FlaotActionButton详解/">
       </div>
     
   </div>
@@ -531,7 +525,7 @@ void forE">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集合的遍历"><span class="nav-number">1.</span> <span class="nav-text">集合的遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Iterator"><span class="nav-number">1.1.</span> <span class="nav-text">使用Iterator</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Iterator提供的四个方法"><span class="nav-number">1.1.1.</span> <span class="nav-text">Iterator提供的四个方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next方法"><span class="nav-number">1.1.2.</span> <span class="nav-text">next方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Lambda表达式遍历Iterator"><span class="nav-number">1.2.</span> <span class="nav-text">使用Lambda表达式遍历Iterator</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#FlaotActionButton详解"><span class="nav-number">1.</span> <span class="nav-text">FlaotActionButton详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#导入依赖项"><span class="nav-number">1.1.</span> <span class="nav-text">导入依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析FloatActionButton代码"><span class="nav-number">1.2.</span> <span class="nav-text">解析FloatActionButton代码</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
