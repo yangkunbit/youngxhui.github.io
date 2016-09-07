@@ -23,7 +23,7 @@
 <pre><code>stars:&gt;1000 fork:&gt;200 java
 </code></pre><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%90%9C%E7%B4%A2.png" alt=""></p>
 <p>就是这样。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>码字不易，终于写完了，如果觉得对你有帮助，我的目的就达到了。<br>谢谢<br>如有错误，还望指正。<br><img src="http://7xt81u.com1.z0.glb.clouddn.com/2483A6490B7A9159E78899AD3DC907CF.jpg" alt=""></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>码字不易，终于写完了，如果觉得对你有帮助，我的目的就达到了。<br>谢谢<br>如有错误，还望指正。<br><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -630,6 +630,7 @@ $ git commit -m &quot;branch test&quot;
 <p>ProTip<br>通过将某些关键字到您的拉请求的文本，你可以用代码相关联的问题。当你拉入请求合并，相关问题也将被关闭。例如，输入短语关闭＃32将关闭在仓库中发行数量32。欲了解更多信息，请查看我们的帮助文章。<br>By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase Closes #32 would close issue number 32 in the repository. For more information, check out our help article.</p>
 </blockquote>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>基本的GitHub教程就算写完了，已有如果在有就是一些GitHub上的一些使用小技巧了。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -645,6 +646,7 @@ $ git commit -m &quot;branch test&quot;
 <h3 id="上传-同步分支"><a href="#上传-同步分支" class="headerlink" title="上传/同步分支"></a>上传/同步分支</h3><p>这个操作和同步仓库是一个操作，点击<strong>Publish/Sync</strong>上传或同步分支。</p>
 <h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><p>首先要把分支切换到你要删除的分支下，如我们要删除<strong>new master</strong>，将分支切换到<strong>new master</strong>点击右上角齿轮就会出现<strong>Delete new master</strong><br><img src="http://i4.buimg.com/a0eca387f7ca9407.png" alt=""><br>点击<strong>Delete new master</strong>就会弹出一个对话框，询问删除的内容。<br><img src="http://i4.buimg.com/2872815dd8b1c43c.png" alt=""><br>第一个<strong>yes ，Delete both</strong>是将本地与网页全部删除；<br>第二个<strong>Delete local only</strong>仅仅是删除本地。<br>第三个是取消。</p>
 <h3 id="合并两个分支"><a href="#合并两个分支" class="headerlink" title="合并两个分支"></a>合并两个分支</h3><p>将一个分支与<strong>master</strong>分支进行合并。<br>我们首先把分支切换到<strong>master</strong>下，点击<strong>Update from new-branch</strong>进行分支的合并。<br><img src="http://i4.buimg.com/1b32fa54cd9c4ad0.png" alt=""><br>此时我们查看<strong>history</strong>目录下就会<br><img src="http://i4.buimg.com/54b4a09835d9d56e.png" alt=""></p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -674,6 +676,7 @@ $ git commit -m &quot;branch test&quot;
 <p>我们这里只选择第一个修改对象，也就是<strong>这个是测试文本</strong>就行修改。summer我们填写为<em>第一次修改</em>，Description我们填写为<em>增加了这个是测试文本</em>的内容，之后点击<strong>Commit to master</strong>。<br><img src="http://i2.piimg.com/64257cc07be84763.png" alt=""><br>切换到<strong>History</strong>目录下<br><img src="http://i2.piimg.com/4e881fef4bf47faf.png" alt=""><br>我们会发现他改变了。<br>这次我们把<strong>你好</strong>进行添加。<br><img src="http://i4.piimg.com/f106e79280890e51.png" alt=""><br>在<strong>History</strong>目录下发生了这样的改变。会在<strong>History</strong>目录下形成一天时间线，来指出每一次的修改标题和内容，同时会把修改的内容用<strong>绿色标识</strong>标出。<br>我们打开本地的文本，删除刚刚添加的第一行<strong>这个是测试文本</strong>。<br><img src="http://i4.piimg.com/610b2831c914d145.png" alt=""><br>此时你就会发现github发生了变化。<br><img src="http://i3.piimg.com/503c85b3995b54d1.png" alt=""><br>此时的<strong>红色标识</strong>标识删除。我们写好Summer和Description并点击Commit to master。<br>这样我们就删除了第一行。同时在<strong>History</strong>目录下又多了一条时间轴。<br><img src="http://i2.piimg.com/0c23f795ae0f03b3.png" alt=""><br>这样我们就完成了删除。</p>
 <h3 id="上传与同步"><a href="#上传与同步" class="headerlink" title="上传与同步"></a>上传与同步</h3><h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>此时，当我们打开github网页，就会发现此时你的修改的内容并没有出现在这里。这是因为你没有进行同步，仅仅是在本地就行了修改。此时我们仅仅需要点击右上角的<strong>publish</strong><br><img src="http://i2.piimg.com/a47f2dc2bd52f7fc.png" alt=""><br>此时你就会本地内容已经上传到网页上。<br><img src="http://i2.piimg.com/a0b27070abb2210b.png" alt=""></p>
 <h4 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h4><p>当你的代码库上传后就会发现，原来的<strong>publish</strong>以及变为了<strong>Sync</strong>。<br><img src="http://7xrn7f.com1.z0.glb.clouddn.com/16-5-3/66610926.jpg" alt=""><br>点击<strong>Sync</strong>同步代码库！</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
