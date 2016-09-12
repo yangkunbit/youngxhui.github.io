@@ -22,7 +22,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="签名（signature）"><a href="#签名（signature）" class="headerlink" title="签名（signature）"></a>签名（signature）</h1><hr>
+<h2 id="签名（signature）"><a href="#签名（signature）" class="headerlink" title="签名（signature）"></a>签名（signature）</h2><hr>
 <pre><code>public final class String
     implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence
 </code></pre><p>String使用了</p>
