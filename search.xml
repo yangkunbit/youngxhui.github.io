@@ -6,13 +6,12 @@
     <entry>
       <title><![CDATA[String源码剖析]]></title>
       <url>http://yoursite.com/2016/09/11/String%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/</url>
-      <content type="html"><![CDATA[<p>[TOC]</p>
-<p>String是java程序中出现比较多的对象，分析一下String<br>首先String是由final修饰的。因此String不可变，无法继承。</p>
+      <content type="html"><![CDATA[<p>String是java程序中出现比较多的对象，分析一下String<br>首先String是由final修饰的。因此String不可变，无法继承。</p>
 <blockquote>
 <p>将方法或类声明为final主要目的是：确保它们不会再子类中改变语义。String类是final类，这意味着不允许任何人定义String的子类。换言之，如果有一个String的引用，它引用的一定是一个String对象，而不可能是其他类的对象。<br>——《Java核心技术 卷I》<br>作者：R eversal<br>链接：<a href="https://www.zhihu.com/question/31345592/answer/51639967" target="_blank" rel="external">https://www.zhihu.com/question/31345592/answer/51639967</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。</p>
 </blockquote>
 <h1 id="String不可变性及其原因"><a href="#String不可变性及其原因" class="headerlink" title="String不可变性及其原因"></a>String不可变性及其原因</h1><h2 id="String的不可变性"><a href="#String的不可变性" class="headerlink" title="String的不可变性"></a>String的不可变性</h2><p>什么叫String的不可变性呢？让我们来看一个例子。<br>        String s=“abcd“；<br>上面的语句定义了一个字符串变量s，该变量指向字符串“abcd”，当初始化变量s时，会在堆中为s非配内容空间，当将字符串变量，赋值给另一个字符串变量时，例如：String s2=s；<br>此时，s2和s是相同的字符串对象，它们指向堆中的同一个内存空间。<br>当一个字符串连接其他字符时，他就指向了新的字符串对象，例如，s=s.concat(“ef“）， 此时，s=”abcdef”;它在内存中又指向了一个新的储存空间，存放字符串”abcdef”。<br>当一个字符串在堆中被分配内容时，它就是不可变的，任何String的方法都无法改变字符串本身，但它可以返回一个新的字符串对象。<br>由于String是不可变的，所以他们的空间可以共享。例如String str = “abc”;就和<br>JAVA<br>        char data[] = {‘a’, ‘b’, ‘c’};<br>        String str = new String(data);  </p>
-<p>是等价的，它们共享一个存储空间。<br> 如果需要可以修改的字符串对象，可以使用StringBuffer和StringBuilder，StringBuffer是线程安全的，由于StringBuilder不需要进行同步操作，StringBuilder是比较快速的。  </p>
+<p>是等价的，它们共享一个存储空间。如果需要可以修改的字符串对象，可以使用StringBuffer和StringBuilder，StringBuffer是线程安全的，由于StringBuilder不需要进行同步操作，StringBuilder是比较快速的。  </p>
 <ul>
 <li>String不可变性的原因  <ul>
 <li>源码中String的本质是一个final类型的char数组，既然是final类型，那个该数组引用value就不允许再指向其他对象了，因此只从类的设计角度讲：如果jdk源码中并没有提供对value本身的修改，那么理论上来讲String是不可变的</li>
