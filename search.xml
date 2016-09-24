@@ -133,7 +133,15 @@
 <pre><code>stars:&gt;1000 fork:&gt;200 java
 </code></pre><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%90%9C%E7%B4%A2.png" alt=""></p>
 <p>就是这样。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>码字不易，终于写完了，如果觉得对你有帮助，我的目的就达到了。<br>谢谢<br>如有错误，还望指正。<br><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
+<h2 id="查看项目中的语言类型"><a href="#查看项目中的语言类型" class="headerlink" title="查看项目中的语言类型"></a>查看项目中的语言类型</h2><p>一个项目中，可能使用了多种语言，我们如何一下子就能看到一个项目使用了什么语言？其实很简单，Github已经为我们统计好了。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%9C%8B.png" alt=""></p>
+<p>也行你注意过，但是没有发现它有什么用。<br>点击下面的彩条</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/BaiduShurufa_2016-9-4_22-25-50.png" alt=""></p>
+<p>github已经为我们统计好这个项目所有的语言及其比例。</p>
+<p>一些常见的代码表示颜色</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/BaiduShurufa_2016-9-24_17-7-2.png" alt=""></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>码字不易，终于写完了，如果觉得对你有帮助，我的目的就达到了。<br>谢谢<br>如有错误，还望指正。</p>
+<h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -178,6 +186,7 @@ $ git commit -m &quot;branch test&quot;
 <pre><code>$ git merge dev
 </code></pre><h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><pre><code>$ git branch -d dev
 </code></pre><hr>
+<h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -740,7 +749,7 @@ $ git commit -m &quot;branch test&quot;
 <p>ProTip<br>通过将某些关键字到您的拉请求的文本，你可以用代码相关联的问题。当你拉入请求合并，相关问题也将被关闭。例如，输入短语关闭＃32将关闭在仓库中发行数量32。欲了解更多信息，请查看我们的帮助文章。<br>By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase Closes #32 would close issue number 32 in the repository. For more information, check out our help article.</p>
 </blockquote>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>基本的GitHub教程就算写完了，已有如果在有就是一些GitHub上的一些使用小技巧了。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
+<h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -756,7 +765,7 @@ $ git commit -m &quot;branch test&quot;
 <h3 id="上传-同步分支"><a href="#上传-同步分支" class="headerlink" title="上传/同步分支"></a>上传/同步分支</h3><p>这个操作和同步仓库是一个操作，点击<strong>Publish/Sync</strong>上传或同步分支。</p>
 <h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><p>首先要把分支切换到你要删除的分支下，如我们要删除<strong>new master</strong>，将分支切换到<strong>new master</strong>点击右上角齿轮就会出现<strong>Delete new master</strong><br><img src="http://i4.buimg.com/a0eca387f7ca9407.png" alt=""><br>点击<strong>Delete new master</strong>就会弹出一个对话框，询问删除的内容。<br><img src="http://i4.buimg.com/2872815dd8b1c43c.png" alt=""><br>第一个<strong>yes ，Delete both</strong>是将本地与网页全部删除；<br>第二个<strong>Delete local only</strong>仅仅是删除本地。<br>第三个是取消。</p>
 <h3 id="合并两个分支"><a href="#合并两个分支" class="headerlink" title="合并两个分支"></a>合并两个分支</h3><p>将一个分支与<strong>master</strong>分支进行合并。<br>我们首先把分支切换到<strong>master</strong>下，点击<strong>Update from new-branch</strong>进行分支的合并。<br><img src="http://i4.buimg.com/1b32fa54cd9c4ad0.png" alt=""><br>此时我们查看<strong>history</strong>目录下就会<br><img src="http://i4.buimg.com/54b4a09835d9d56e.png" alt=""></p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
+<h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt=""></p>
 ]]></content>
     </entry>
     
@@ -776,7 +785,7 @@ $ git commit -m &quot;branch test&quot;
 <p>github for windows的界面非常清爽，的确符合geek的性质，个人表示非常喜欢。<br>我们来建立第一个仓库，点击左上角的<strong>+号</strong>，初次建立他会有一圈圈的涟漪，非常漂亮哦。<br>打开之后有三个选项，Add，Create，Clone。<br><img src="http://i3.piimg.com/cf0b5eb355dfb4cf.png" alt=""><br>我们分别来介绍一下这三个功能。</p>
 <h4 id="Add功能"><a href="#Add功能" class="headerlink" title="Add功能"></a>Add功能</h4><p>如果本地有工程，就可以使用Add添加<br><img src="http://i4.piimg.com/9462ab2173dcb1ac.png" alt=""></p>
 <h4 id="Clone功能"><a href="#Clone功能" class="headerlink" title="Clone功能"></a>Clone功能</h4><p>这个功能其实最好理解了，克隆这名字通俗易懂好理解。<br>如何使用Clone功能呢？<br><img src="http://i2.piimg.com/1f8a6aa46acc72e2.png" alt=""><br>就是将在浏览器上已经创建好的项目导入到本地，换句话说就是下载到本地。</p>
-<h4 id="Create功能"><a href="#Create功能" class="headerlink" title="Create功能"></a>Create功能</h4><p>创建一个代码库，<br>Name填写你的仓库名字。Local path写你将要保存在本地路径。我们主要从这个功能开始github之旅。<br><img src="http://i4.piimg.com/ae8004ec7718464b.png" alt=""><br>我们在这里填写First，来创建第一个我们自己的repaoitory。<br><img src="http://i4.piimg.com/0931e0e795ffecb6.png" alt=""></p>
+<h4 id="Create功能"><a href="#Create功能" class="headerlink" title="Create功能"></a>Create功能</h4><p>创建一个代码库，<br>Name填写你的仓库名字。Local path写你将要保存在本地路径。我们主要从这个功能开始github之旅。<br><img src="http://i4.piimg.com/ae8004ec7718464b.png" alt=""><br>我们在这里填写First，来创建第一个我们自己的repository。<br><img src="http://i4.piimg.com/0931e0e795ffecb6.png" alt=""></p>
 <h2 id="开始使用第一个代码库"><a href="#开始使用第一个代码库" class="headerlink" title="开始使用第一个代码库"></a>开始使用第一个代码库</h2><h3 id="修改第一个代码库中内容"><a href="#修改第一个代码库中内容" class="headerlink" title="修改第一个代码库中内容"></a>修改第一个代码库中内容</h3><p>我们来找到刚刚创建的代码库在本地的位置。就是刚刚在local path的地址路径，当然如果你忘了，请右键点击First。<br><img src="http://i3.piimg.com/0e76cd4dde922713.png" alt=""><br>选择Open in Explorer。这样我们就可以转到刚刚的路径下。<br>我们新建一个文本文档。在里面编辑。<br>如下<br><img src="http://i3.piimg.com/ce9841870311a76d.png" alt=""><br>此时的github就会变成这个样子(Changs)：<br><img src="http://i3.piimg.com/2f8f72a1976e5986.png" alt=""><br>你会发现此时github会出现刚刚编辑的内容。</p>
 <ol>
 <li>这个是测试文本</li>
