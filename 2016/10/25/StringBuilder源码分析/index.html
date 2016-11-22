@@ -94,7 +94,8 @@
 作者wevanyoungxhui
 概况一个可变的字符序列。此类提供一个与 StringBuffer 兼容的 API，但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快。 
 签名123public f">
-<meta property="og:updated_time" content="2016-10-25T02:44:33.237Z">
+<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg">
+<meta property="og:updated_time" content="2016-11-22T02:33:23.321Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="StringBuilder源码分析">
 <meta name="twitter:description" content="#StringBuilder源码分析
@@ -102,6 +103,7 @@
 作者wevanyoungxhui
 概况一个可变的字符序列。此类提供一个与 StringBuffer 兼容的 API，但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快。 
 签名123public f">
+<meta name="twitter:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg">
 
 
 
@@ -391,6 +393,8 @@
 <h2 id="replace-方法"><a href="#replace-方法" class="headerlink" title="replace()方法"></a>replace()方法</h2><p><code>replace</code> 方法仍旧继承了父类的 <code>replace</code> 方法,是替换字符<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> StringBuilder <span class="title">replace</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end, String str)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>.replace(start, end, str);</span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="insert-方法"><a href="#insert-方法" class="headerlink" title="insert()方法"></a>insert()方法</h2><p>该方法是插入字符串。该方法重载了12个方法。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>该类所有的方法都是通过父类( <code>AbstractStringBuilder</code> )来实现。该方法与<code>String</code>和<code>StringBuffer</code>的区别在于，<code>String</code>是不可修改的，<code>StringBuffer</code>和<code>StringBuilder</code>是可以修改的，但是<code>StringBuffer</code>是线程安全的，<code>StringBuilder</code>是线程不安全的，但是在效率上， <code>StringBuffer</code> 因为对方法做了同步，所以一般是低于 <code>StringBuilder</code>的.</p>
+<h2 id="打赏支持"><a href="#打赏支持" class="headerlink" title="打赏支持"></a>打赏支持</h2><hr>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg" alt=""></p>
 
       
     </div>
@@ -584,7 +588,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作者"><span class="nav-number">1.</span> <span class="nav-text">作者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概况"><span class="nav-number">2.</span> <span class="nav-text">概况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#签名"><span class="nav-number">3.</span> <span class="nav-text">签名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CharSequence接口"><span class="nav-number">4.</span> <span class="nav-text">CharSequence接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#StringBulider-CharSequence"><span class="nav-number">4.1.</span> <span class="nav-text">StringBulider(CharSequence)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#append-方法"><span class="nav-number">5.</span> <span class="nav-text">append()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#appendCodePoint-方法"><span class="nav-number">6.</span> <span class="nav-text">appendCodePoint()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#delete-方法"><span class="nav-number">7.</span> <span class="nav-text">delete()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-方法"><span class="nav-number">8.</span> <span class="nav-text">toString()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#replace-方法"><span class="nav-number">9.</span> <span class="nav-text">replace()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#insert-方法"><span class="nav-number">10.</span> <span class="nav-text">insert()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">11.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作者"><span class="nav-number">1.</span> <span class="nav-text">作者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概况"><span class="nav-number">2.</span> <span class="nav-text">概况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#签名"><span class="nav-number">3.</span> <span class="nav-text">签名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CharSequence接口"><span class="nav-number">4.</span> <span class="nav-text">CharSequence接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#StringBulider-CharSequence"><span class="nav-number">4.1.</span> <span class="nav-text">StringBulider(CharSequence)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#append-方法"><span class="nav-number">5.</span> <span class="nav-text">append()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#appendCodePoint-方法"><span class="nav-number">6.</span> <span class="nav-text">appendCodePoint()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#delete-方法"><span class="nav-number">7.</span> <span class="nav-text">delete()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-方法"><span class="nav-number">8.</span> <span class="nav-text">toString()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#replace-方法"><span class="nav-number">9.</span> <span class="nav-text">replace()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#insert-方法"><span class="nav-number">10.</span> <span class="nav-text">insert()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">11.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打赏支持"><span class="nav-number">12.</span> <span class="nav-text">打赏支持</span></a></li></ol></div>
             
           </div>
         </section>
