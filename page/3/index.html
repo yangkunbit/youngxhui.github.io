@@ -374,19 +374,20 @@
       
         
           
-            <p> 清除右键无效项</p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>有时在安装一些程序时，当程序卸载后会留下一些右键无效项，对于强迫症处女座来说，这是一件万万不能的。</p>
-<hr>
-<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ul>
-<li><p>新建一个文本文档，复制下面的代码到文本里</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@ ECHO OFF</span><br><span class="line">@ ECHO.</span><br><span class="line">@ ECHO.</span><br><span class="line">@ ECHO. 说 明</span><br><span class="line">@ ECHO -----------------------------------------------------------------------</span><br><span class="line">@ ECHO </span><br><span class="line">@ ECHO 可能杀毒软件会提示威胁项，允许运行就好！</span><br><span class="line">@ ECHO </span><br><span class="line">@ ECHO -----------------------------------------------------------------------</span><br><span class="line">@ Echo.</span><br><span class="line">PAUSE</span><br><span class="line">regsvr32 /u /s igfxpph.dll</span><br><span class="line">reg delete HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers /f</span><br><span class="line">reg add HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\new /ve /d &#123;D969A300-E7FF-11d0-A93B-00A0C90F2719&#125;</span><br><span class="line">reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v HotKeysCmds /f</span><br><span class="line">reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v IgfxTray /f</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将文本的后缀改为<strong><em>.cmd</em></strong>。</p>
-</li>
-<li>双击运行这个脚本。<br>此时，你就会发现那些没用的右键选项都没有了 ^ ^</li>
-</ul>
+           清除右键无效项
+前言有时在安装一些程序时，当程序卸载后会留下一些右键无效项，对于强迫症处女座来说，这是一件万万不能的。
 
-          
+开始
+新建一个文本文档，复制下面的代码到文本里
+12345678910111213141516@ ECHO OFF@ ECHO.@ ECHO.@ ECHO. 说 明@ ECHO
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/04/21/清除右键无效项/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -503,44 +504,18 @@
       
         
           
-            <p>  作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获<br>  下面会列出我做的题和做题时的感受</p>
-<hr>
-<blockquote>
-<h2 id="1-煤球数目"><a href="#1-煤球数目" class="headerlink" title="1.煤球数目"></a>1.煤球数目</h2><p>有一堆煤球，堆成三角棱锥形。具体：<br> 第一层放1个，<br>第二层3个（排列成三角形），<br>第三层6个（排列成三角形），<br>第四层10个（排列成三角形），<br>….<br>如果一共有100层，共有多少个煤球？<br>请填表示煤球总数目的数字。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
-</blockquote>
-<p>这个题的第一反应我是用excel做，用excel生成有序的数列，结果建立了excel后出现的是小树，瞬间懵逼…………只好一步一步的写代码，按理说这应该是一个简单的代码，可是我还是写错了，在我记忆里好像写的是5050……额，好心痛……</p>
-<hr>
-<blockquote>
-<h2 id="2-生日蜡烛"><a href="#2-生日蜡烛" class="headerlink" title="2.生日蜡烛"></a>2.生日蜡烛</h2><p>某君从某年开始每年都举办一次生日party，并且每次都要吹熄与年龄相同根数的蜡烛。<br>现在算起来，他一共吹熄了236根蜡烛。<br>请问，他从多少岁开始过生日party的？<br>请填写他开始过生日party的年龄数。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
-</blockquote>
-<p>这个题的第一反应还是excel表，最后我的确是用excel做出来了，也是这次比赛中唯一做对的题目。虽然用excel比较麻烦，但是对于我这种第一时间没有一个很好的明确思路的我来说，这样很快。</p>
-<hr>
-<blockquote>
-<h2 id="3-凑算式"><a href="#3-凑算式" class="headerlink" title="3.凑算式"></a>3.凑算式</h2><p><img src="http://img.blog.csdn.net/20160320152805039" alt="图1.1"><br>这个算式中A~I代表1~9的数字，不同的字母代表不同的数字。<br>比如：<br>6+8/3+952/714 就是一种解法，<br>5+3/1+972/486 是另一种解法。<br>这个算式一共有多少种解法？<br>注意：你提交应该是个整数，不要填写任何多余的内容或说明性文字。</p>
-</blockquote>
-<p>很简单的暴力求解，为什么我没有做对呢…………开始的时候题的要求是0~9，后来改为1~9，可惜，我们考场没有收到任何通知…………我按0~9算的……悲哀的人生</p>
-<hr>
-<p>做到这里的时候好像时间就过去了一个半小时了，实在是太慢了，也侧面说面对算法不熟练……</p>
-<hr>
-<blockquote>
-<h2 id="4-快速排序"><a href="#4-快速排序" class="headerlink" title="4.快速排序"></a>4.快速排序</h2><p>排序在各种场合经常被用到。<br>快速排序是十分常用的高效率的算法。<br>其思想是：先选一个“标尺”，<br>用它把整个队列过一遍筛子，<br>以保证：其左边的元素都不大于它，其右边的元素都不小于它。<br>这样，排序问题就被分割为两个子区间。<br>再分别对子区间排序就可以了。<br>下面的代码是一种实现，请分析并填写划线部分缺少的代码。</p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t = a[i];</span><br><span class="line">    a[i] = a[j];</span><br><span class="line">    a[j] = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> p, <span class="keyword">int</span> r)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = p;</span><br><span class="line">    <span class="keyword">int</span> j = r + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> x = a[p];</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">while</span>(i&lt;r &amp;&amp; a[++i]&lt;x);</span><br><span class="line">        <span class="keyword">while</span>(a[--j]&gt;x);</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=j) <span class="keyword">break</span>;</span><br><span class="line">        swap(a,i,j);</span><br><span class="line">    &#125;</span><br><span class="line">    ______________________;</span><br><span class="line">    return j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quicksort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> p, <span class="keyword">int</span> r)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p&lt;r)&#123;</span><br><span class="line">        <span class="keyword">int</span> q = partition(a,p,r);</span><br><span class="line">        quicksort(a,p,q<span class="number">-1</span>);</span><br><span class="line">        quicksort(a,q+<span class="number">1</span>,r);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">int</span> a[] = &#123;<span class="number">5</span>,<span class="number">13</span>,<span class="number">6</span>,<span class="number">24</span>,<span class="number">2</span>,<span class="number">8</span>,<span class="number">19</span>,<span class="number">27</span>,<span class="number">6</span>,<span class="number">12</span>,<span class="number">1</span>,<span class="number">17</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> N = <span class="number">12</span>;</span><br><span class="line"></span><br><span class="line">    quicksort(a, <span class="number">0</span>, N<span class="number">-1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;N; i++) <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line"></span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其实第一眼看到快速排序就有点后悔，因为之前看过，但是没有记住，当时并没有重视。so，这个题自然是做错了。</p>
-<hr>
-<blockquote>
-<p>##5.抽签<br>X星球要派出一个5人组成的观察团前往W星。<br>其中：<br>A国最多可以派出4人。<br>B国最多可以派出2人。<br>C国最多可以派出2人。<br>….<br>那么最终派往W星的观察团会有多少种国别的不同组合呢？<br>下面的程序解决了这个问题。<br>数组a[] 中既是每个国家可以派出的最多的名额。<br>程序执行结果为：<br>DEFFF<br>CEFFF<br>CDFFF<br>CDEFF<br>CCFFF<br>CCEFF<br>CCDFF<br>CCDEF<br>BEFFF<br>BDFFF<br>BDEFF<br>BCFFF<br>BCEFF<br>BCDFF<br>BCDEF<br>….<br>(以下省略，总共101行)</p>
-</blockquote>
-<p>没做出来</p>
-<hr>
-<blockquote>
-<h2 id="6-方格填数"><a href="#6-方格填数" class="headerlink" title="6.方格填数"></a>6.方格填数</h2><p><img src="http://img.blog.csdn.net/20160320154048055" alt="1.2"><br>填入0~9的数字。要求：连续的两个数字不能相邻。<br>（左右、上下、对角都算相邻）<br>一共有多少种可能的填数方案？<br>请填写表示方案数目的整数。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
-</blockquote>
-<p>这个题我是把每个格子标了序号，用暴力求解满足条件，好像我算的是400。额，有错了，好吧，我仅仅是做到这里。</p>
-<hr>
-<p>虽然我没有做完吧，甚至只做对了一道题，但是我想说，大一才刚刚开始，权当锻炼，而且还有很大的收获，以后要努力喽。</p>
+            作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获  下面会列出我做的题和做题时的感受
 
-          
+
+1.煤球数目有一堆煤球，堆成三角棱锥形。具体： 第一层放1个，第二层3个（排列成三角形），第三层6个（排列成三角形），第四层10个（排列成三角形），…
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/04/21/第一次参加蓝桥杯感受/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -657,13 +632,20 @@
       
         
           
-            <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=35403523&auto=1&height=66"></iframe></p>
-<blockquote>
-<p>我没有最烈的酒，<br>我没有阳光和宇宙。<br>讲真儿，我从来没走，<br>所以也不需要留。<br>我在你身后。<br>不要愁，不要愁，<br>风雨与你共舟</p>
-</blockquote>
-<p>谢谢你！<br>加油，共勉！</p>
+          
+
+我没有最烈的酒，我没有阳光和宇宙。讲真儿，我从来没走，所以也不需要留。我在你身后。不要愁，不要愁，风雨与你共舟
+
+谢谢你！加油，共勉！
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/04/20/我一直都在/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
