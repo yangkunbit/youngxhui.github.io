@@ -1425,6 +1425,12 @@ $ git commit -m &quot;branch test&quot;
   
     
     <entry>
+      <title><![CDATA[categories]]></title>
+      <url>http://yoursite.com/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[about]]></title>
       <url>http://yoursite.com/about/index.html</url>
       <content type="html"><![CDATA[<p><img src="http://i4.piimg.com/6387de6375ae2023.png" alt="Alt text"> </p>
@@ -1442,12 +1448,6 @@ $ git commit -m &quot;branch test&quot;
     <entry>
       <title><![CDATA[tags]]></title>
       <url>http://yoursite.com/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[categories]]></title>
-      <url>http://yoursite.com/categories/index.html</url>
       <content type="html"></content>
     </entry>
     
