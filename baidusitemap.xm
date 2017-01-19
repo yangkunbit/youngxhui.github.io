@@ -3,20 +3,19 @@
 
 
     
-    
   <url>
-    <loc>http://yoursite.com/2017/01/10/Maven%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2017-01-10T04:44:51.870Z</lastmod>
+    <loc>http://yoursite.com/2017/01/19/Junit%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2017-01-19T08:20:00.000Z</lastmod>
     <data>
         <display>
-        <title>Maven入门</title>
-        <pubTime>2017-01-10T03:04:44.000Z</pubTime>
+        <title>Junit单元测试</title>
+        <pubTime>2017-01-19T08:14:08.000Z</pubTime>
         
         <tag>java</tag>
          
-        <tag>Maven</tag>
+        <tag>工具</tag>
          
-        <tag>构建工具</tag>
+        <tag>测试</tag>
          
          
            
@@ -24,6 +23,28 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://yoursite.com/2017/01/10/Maven%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2017-01-19T08:19:49.780Z</lastmod>
+    <data>
+        <display>
+        <title>Maven入门</title>
+        <pubTime>2017-01-10T03:04:44.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>工具</tag>
+         
+        <tag>Maven</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2016/05/03/GitHub-for-Windows%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B(%E4%B8%80)/</loc>
