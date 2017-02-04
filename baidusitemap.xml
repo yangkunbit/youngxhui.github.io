@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://yoursite.com/2017/01/10/Maven%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2017-02-04T12:48:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Maven入门</title>
+        <pubTime>2017-01-10T03:04:44.000Z</pubTime>
+        
+        <tag>java </tag>
+         
+        <tag>Maven </tag>
+         
+        <tag>工具 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -17,27 +38,6 @@
         <tag>工具 </tag>
          
         <tag>测试 </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/10/Maven%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2017-01-19T08:19:49.780Z</lastmod>
-    <data>
-        <display>
-        <title>Maven入门</title>
-        <pubTime>2017-01-10T03:04:44.000Z</pubTime>
-        
-        <tag>java </tag>
-         
-        <tag>工具 </tag>
-         
-        <tag>Maven </tag>
          
          
            

@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java,工具,Maven," />
+  <meta name="keywords" content="java,Maven,工具," />
 
 
 
@@ -84,48 +84,50 @@
 
 
 
-<meta name="description" content="什么是MavenMaven是一个跨平台的项目管理工具，主要用于基于java平台的项目构建，依赖管理。
+<meta name="description" content="什么是MavenMaven是一个跨平台的项目管理工具，主要用于基于Java平台的项目构建，依赖管理。
 
-maven之前的项目管理一般为 antmaven的出现时为了解决项目的一些问题：
+maven之前的项目管理一般为 ant。
+Maven的作用Maven的出现时为了解决项目的一些问题：
 
 如果有好几个项目，这好几个项目中，需要用到很多相同的jar包，能不能只建立一个仓库来解决这个问题？
 测试方法能不能全部运行呢？
 怎么样把一个模块的功能放入到仓库中
 
-Maven的安装和配置Maven的安装Jdk要">
+Maven的安装和配置Ma">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven入门">
 <meta property="og:url" content="http://yoursite.com/2017/01/10/Maven入门/index.html">
 <meta property="og:site_name" content="ISLAND">
-<meta property="og:description" content="什么是MavenMaven是一个跨平台的项目管理工具，主要用于基于java平台的项目构建，依赖管理。
+<meta property="og:description" content="什么是MavenMaven是一个跨平台的项目管理工具，主要用于基于Java平台的项目构建，依赖管理。
 
-maven之前的项目管理一般为 antmaven的出现时为了解决项目的一些问题：
+maven之前的项目管理一般为 ant。
+Maven的作用Maven的出现时为了解决项目的一些问题：
 
 如果有好几个项目，这好几个项目中，需要用到很多相同的jar包，能不能只建立一个仓库来解决这个问题？
 测试方法能不能全部运行呢？
 怎么样把一个模块的功能放入到仓库中
 
-Maven的安装和配置Maven的安装Jdk要">
+Maven的安装和配置Ma">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/maven%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/mvn-v.png">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E7%9B%AE%E5%BD%95.png">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/comile.png">
-<meta property="og:image" content="leanote://file/getImage?fileId=5874580a11be434d19000002">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/ideawebapp.png">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/id%E5%A1%AB%E5%86%99.png">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E5%AE%8C%E6%88%90.png">
-<meta property="og:updated_time" content="2017-01-19T08:19:49.780Z">
+<meta property="og:updated_time" content="2017-02-04T12:48:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maven入门">
-<meta name="twitter:description" content="什么是MavenMaven是一个跨平台的项目管理工具，主要用于基于java平台的项目构建，依赖管理。
+<meta name="twitter:description" content="什么是MavenMaven是一个跨平台的项目管理工具，主要用于基于Java平台的项目构建，依赖管理。
 
-maven之前的项目管理一般为 antmaven的出现时为了解决项目的一些问题：
+maven之前的项目管理一般为 ant。
+Maven的作用Maven的出现时为了解决项目的一些问题：
 
 如果有好几个项目，这好几个项目中，需要用到很多相同的jar包，能不能只建立一个仓库来解决这个问题？
 测试方法能不能全部运行呢？
 怎么样把一个模块的功能放入到仓库中
 
-Maven的安装和配置Maven的安装Jdk要">
+Maven的安装和配置Ma">
 <meta name="twitter:image" content="http://7xt81u.com1.z0.glb.clouddn.com/maven%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png">
 
 
@@ -422,21 +424,22 @@ Maven的安装和配置Maven的安装Jdk要">
       
 
       
-        <h1 id="什么是Maven"><a href="#什么是Maven" class="headerlink" title="什么是Maven"></a>什么是Maven</h1><p><code>Maven</code>是一个<strong>跨平台</strong>的项目管理工具，主要用于基于<code>java</code>平台的项目构建，依赖管理。</p>
+        <h1 id="什么是Maven"><a href="#什么是Maven" class="headerlink" title="什么是Maven"></a>什么是Maven</h1><p><code>Maven</code>是一个<strong>跨平台</strong>的项目管理工具，主要用于基于<code>Java</code>平台的项目构建，依赖管理。</p>
 <p><img src="http://7xt81u.com1.z0.glb.clouddn.com/maven%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" alt="maven的生命周期和功能"></p>
-<p>maven之前的项目管理一般为 <code>ant</code><br>maven的出现时为了解决项目的一些问题：</p>
+<p>maven之前的项目管理一般为 <code>ant</code>。</p>
+<h1 id="Maven的作用"><a href="#Maven的作用" class="headerlink" title="Maven的作用"></a>Maven的作用</h1><p><code>Maven</code>的出现时为了解决项目的一些问题：</p>
 <ol>
 <li>如果有好几个项目，这好几个项目中，需要用到很多相同的jar包，<br>能不能只建立一个仓库来解决这个问题？</li>
 <li>测试方法能不能全部运行呢？</li>
 <li>怎么样把一个模块的功能放入到仓库中</li>
 </ol>
 <h1 id="Maven的安装和配置"><a href="#Maven的安装和配置" class="headerlink" title="Maven的安装和配置"></a>Maven的安装和配置</h1><h2 id="Maven的安装"><a href="#Maven的安装" class="headerlink" title="Maven的安装"></a>Maven的安装</h2><h3 id="Jdk要求"><a href="#Jdk要求" class="headerlink" title="Jdk要求"></a>Jdk要求</h3><p>jdk要求1.7+</p>
-<h3 id="下载Maven"><a href="#下载Maven" class="headerlink" title="下载Maven"></a>下载Maven</h3><p>从<a href="http://maven.apache.org/" target="_blank" rel="external">Maven官网</a>上下载最新版本的maven</p>
+<h3 id="下载Maven"><a href="#下载Maven" class="headerlink" title="下载Maven"></a>下载Maven</h3><p>从<a href="http://maven.apache.org/" target="_blank" rel="external">Maven官网</a>上下载最新版本的<code>Maven</code></p>
 <h3 id="设定环境变量"><a href="#设定环境变量" class="headerlink" title="设定环境变量"></a>设定环境变量</h3><p>将下载好的<code>Maven</code>的<code>bin</code>追加到环境变量<code>path</code>中。</p>
-<h3 id="检查maven是否配置成功"><a href="#检查maven是否配置成功" class="headerlink" title="检查maven是否配置成功"></a>检查maven是否配置成功</h3><p>在cmd中运行<code>mvn -v</code>，当出现下面的提示证明配置正确</p>
+<h3 id="检查Maven是否配置成功"><a href="#检查Maven是否配置成功" class="headerlink" title="检查Maven是否配置成功"></a>检查Maven是否配置成功</h3><p>在cmd中运行<code>mvn -v</code>，当出现下面的提示证明配置正确</p>
 <p><img src="http://7xt81u.com1.z0.glb.clouddn.com/mvn-v.png" alt=""></p>
 <p><strong>注意：要用管理员权限运行cmd，否则会报错</strong></p>
-<h2 id="建库"><a href="#建库" class="headerlink" title="建库"></a>建库</h2><p>Maven的很大作用就是导入<code>jar</code>包,所以我们建立一个仓库来放置项目所用的jar包，在需要的时候进行管理。</p>
+<h2 id="建库"><a href="#建库" class="headerlink" title="建库"></a>建库</h2><p><code>Maven</code>的很大作用就是导入<code>jar</code>包,所以我们建立一个仓库来放置项目所用的jar包，在需要的时候进行管理。</p>
 <h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p>Maven的仓库默认路径是<code>C:\Users\UserName\.m2</code> ,<strong>注：UserName为个人电脑名称</strong></p>
 <h1 id="Maven的约定"><a href="#Maven的约定" class="headerlink" title="Maven的约定"></a>Maven的约定</h1><table>
 <thead>
@@ -477,7 +480,7 @@ Maven的安装和配置Maven的安装Jdk要">
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.young.maven.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">sayHello</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"HelloWorld"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>HelloWorldTest.java</code>文件</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.young.maven.model;</span><br><span class="line"><span class="keyword">import</span> org.junit.*;</span><br><span class="line"><span class="keyword">import</span> org.junit.Assert.*;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorldTest</span></span>&#123;</span><br><span class="line">  <span class="meta">@Test</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testHello</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Assert.assertEquals(<span class="string">"HelloWorld"</span>,<span class="keyword">new</span> HelloWorld().sayHello());</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>pom.xml文件<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span><br><span class="line">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.young.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-model<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>pom.xml文件<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span><br><span class="line">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.young.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-model<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>在根目录下执行命令<code>mvn compile</code><br><img src="http://7xt81u.com1.z0.glb.clouddn.com/comile.png" alt=""><br>这样就会编译成功。</p>
 <h1 id="Maven构建命令"><a href="#Maven构建命令" class="headerlink" title="Maven构建命令"></a>Maven构建命令</h1><table>
 <thead>
@@ -519,8 +522,9 @@ Maven的安装和配置Maven的安装Jdk要">
 <li>本地仓库</li>
 <li>远程仓库</li>
 <li>镜像仓库</li>
-<li>如果<code>Maven</code>在本地仓库找不到构建，那么就会去<code>Maven</code>的中央仓库去寻找，如果<code>Maven</code>的中央仓库没有，就会报错。因为Maven的远程仓库在国外,常常无法访问或者很慢,这是我们就要使用一些镜像仓库,来帮助我们。<br>在”~\apache-maven-3.3.9\conf\settings.xml”文件中，找到<code>mirrors</code>,我们可以修改这里进行镜像设置。<br><img src="leanote://file/getImage?fileId=5874580a11be434d19000002" alt=""></li>
+<li>如果<code>Maven</code>在本地仓库找不到构建，那么就会去<code>Maven</code>的中央仓库去寻找，如果<code>Maven</code>的中央仓库没有，就会报错。因为Maven的远程仓库在国外,常常无法访问或者很慢,这是我们就要使用一些镜像仓库,来帮助我们。<br>在”~\apache-maven-3.3.9\conf\settings.xml”文件中，找到<code>mirrors</code>,我们可以修改这里进行镜像设置。</li>
 </ul>
+<p><a href="http://mvnrepository.com/" target="_blank" rel="external">Maven中央仓库</a></p>
 <blockquote>
 <p>中央仓库地址: <a href="http://repo.maven.apache.org/" target="_blank" rel="external">http://repo.maven.apache.org/</a></p>
 </blockquote>
@@ -528,7 +532,7 @@ Maven的安装和配置Maven的安装Jdk要">
 <li><code>project</code>是包含了pom的约束信息</li>
 <li><code>modelVersion</code>指定了当前pom的版本</li>
 <li><code>groupId</code>当前maven输入那个项目，包名+项目名</li>
-<li><code>artifactId</code>项目名+模块名<br><code>version</code>版本号，第一个0表示大版本号，第二个0表示分支版本号，第三个0表示笑版本号。<code>snapshot</code>快照，<code>alpha</code>内部测试版本，<code>beta</code>公测版本，<code>Relese</code>稳定版本，<code>GA</code>正式发布版本。</li>
+<li><code>artifactId</code>项目名+模块名<br><code>version</code>版本号，第一个0表示大版本号，第二个0表示分支版本号，第三个0表示小版本号。<code>snapshot</code>快照，<code>alpha</code>内部测试版本，<code>beta</code>公测版本，<code>Relese</code>稳定版本，<code>GA</code>正式发布版本。</li>
 <li><code>packaging</code>打包方式，默认为jar包，可以为war，zip</li>
 <li><code>name</code> 项目描述</li>
 <li><code>url</code>项目地址，项目描述</li>
@@ -619,9 +623,9 @@ Maven的安装和配置Maven的安装Jdk要">
           
             <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/工具/" rel="tag"># 工具</a>
-          
             <a href="/tags/Maven/" rel="tag"># Maven</a>
+          
+            <a href="/tags/工具/" rel="tag"># 工具</a>
           
         </div>
       
@@ -811,7 +815,7 @@ Maven的安装和配置Maven的安装Jdk要">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Maven"><span class="nav-number">1.</span> <span class="nav-text">什么是Maven</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven的安装和配置"><span class="nav-number">2.</span> <span class="nav-text">Maven的安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven的安装"><span class="nav-number">2.1.</span> <span class="nav-text">Maven的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jdk要求"><span class="nav-number">2.1.1.</span> <span class="nav-text">Jdk要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载Maven"><span class="nav-number">2.1.2.</span> <span class="nav-text">下载Maven</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设定环境变量"><span class="nav-number">2.1.3.</span> <span class="nav-text">设定环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查maven是否配置成功"><span class="nav-number">2.1.4.</span> <span class="nav-text">检查maven是否配置成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建库"><span class="nav-number">2.2.</span> <span class="nav-text">建库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#路径"><span class="nav-number">2.2.1.</span> <span class="nav-text">路径</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven的约定"><span class="nav-number">3.</span> <span class="nav-text">Maven的约定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven项目"><span class="nav-number">4.</span> <span class="nav-text">Maven项目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven构建命令"><span class="nav-number">5.</span> <span class="nav-text">Maven构建命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven坐标"><span class="nav-number">6.</span> <span class="nav-text">Maven坐标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#仓库"><span class="nav-number">7.</span> <span class="nav-text">仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pom-xml"><span class="nav-number">8.</span> <span class="nav-text">pom.xml</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖范围"><span class="nav-number">8.1.</span> <span class="nav-text">依赖范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖传递"><span class="nav-number">8.2.</span> <span class="nav-text">依赖传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖冲突"><span class="nav-number">8.3.</span> <span class="nav-text">依赖冲突</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven创建JavaWeb"><span class="nav-number">9.</span> <span class="nav-text">Maven创建JavaWeb</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Maven"><span class="nav-number">1.</span> <span class="nav-text">什么是Maven</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven的作用"><span class="nav-number">2.</span> <span class="nav-text">Maven的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven的安装和配置"><span class="nav-number">3.</span> <span class="nav-text">Maven的安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven的安装"><span class="nav-number">3.1.</span> <span class="nav-text">Maven的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jdk要求"><span class="nav-number">3.1.1.</span> <span class="nav-text">Jdk要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载Maven"><span class="nav-number">3.1.2.</span> <span class="nav-text">下载Maven</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设定环境变量"><span class="nav-number">3.1.3.</span> <span class="nav-text">设定环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查Maven是否配置成功"><span class="nav-number">3.1.4.</span> <span class="nav-text">检查Maven是否配置成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建库"><span class="nav-number">3.2.</span> <span class="nav-text">建库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#路径"><span class="nav-number">3.2.1.</span> <span class="nav-text">路径</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven的约定"><span class="nav-number">4.</span> <span class="nav-text">Maven的约定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven项目"><span class="nav-number">5.</span> <span class="nav-text">Maven项目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven构建命令"><span class="nav-number">6.</span> <span class="nav-text">Maven构建命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven坐标"><span class="nav-number">7.</span> <span class="nav-text">Maven坐标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#仓库"><span class="nav-number">8.</span> <span class="nav-text">仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pom-xml"><span class="nav-number">9.</span> <span class="nav-text">pom.xml</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖范围"><span class="nav-number">9.1.</span> <span class="nav-text">依赖范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖传递"><span class="nav-number">9.2.</span> <span class="nav-text">依赖传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖冲突"><span class="nav-number">9.3.</span> <span class="nav-text">依赖冲突</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven创建JavaWeb"><span class="nav-number">10.</span> <span class="nav-text">Maven创建JavaWeb</span></a></li></ol></div>
             
 
           </div>
