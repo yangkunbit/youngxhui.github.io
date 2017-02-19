@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[Log4j使用]]></title>
+      <url>http://yoursite.com/2017/02/19/Log4j%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>通过log4j可以看到程序运行时候更加详细的信息。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><ol>
+<li>导入log4j的jar包</li>
+<li>复制log4j的配置文件</li>
+</ol>
+<p>一个简单的log4j的配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">### 设置日志等级 ###</span><br><span class="line">log4j.rootLogger=info, stdout</span><br><span class="line">### 输出到控制台 ###</span><br><span class="line">log4j.appender.stdout=org.apache.log4j.ConsoleAppender</span><br><span class="line">log4j.appender.stdout.Target=System.err</span><br><span class="line">#log4j.appender.stdout=System.err</span><br><span class="line">log4j.appender.stdout.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.stdout.layout.ConversionPattern=%d&#123;ABSOLUTE&#125; %5p %c&#123;1&#125;:%L - %m%n</span><br><span class="line">### 输出到日至文件</span><br><span class="line">log4j.appender.file=org.apache.log4j.FileAppender</span><br><span class="line">log4j.appender.file.File=/home/youngxhui/IdeaProjects/SpringDemo/spring-aop-xml/src/mylog.log</span><br><span class="line">log4j.appender.file.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.file.layout.ConversionPattern=%&#123;ABSOLUTE&#125; %5p %c&#123;1&#125;:%L - %m%n</span><br></pre></td></tr></table></figure>
+<h1 id="设置日志级别"><a href="#设置日志级别" class="headerlink" title="设置日志级别"></a>设置日志级别</h1><ul>
+<li>info：基本信息</li>
+<li>debug：更详细的信息</li>
+</ul>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/log4j.png" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Spring学习(一)]]></title>
       <url>http://yoursite.com/2017/02/08/Spring%E5%AD%A6%E4%B9%A0-%E4%B8%80/</url>
       <content type="html"><![CDATA[<p>Spring学习笔记，仅供自己参考。</p>
@@ -1653,12 +1671,6 @@ $ git commit -m &quot;branch test&quot;
   
     
     <entry>
-      <title><![CDATA[categories]]></title>
-      <url>http://yoursite.com/categories/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title></title>
       <url>http://yoursite.com/about/index.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/100.png" alt="Alt text"> </p>
@@ -1674,10 +1686,18 @@ $ git commit -m &quot;branch test&quot;
 <h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><blockquote>
 <p>Android<br>Spring</p>
 </blockquote>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><iframe src="http://http://youngxhui.github.io/about/graph/coding" frameborder="0" scrolling="no" width="1200"></iframe>
+
 <h1 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h1><blockquote>
 <p>邮箱：youngxhui@gmail.com</p>
 </blockquote>
 <h1 id="留言区"><a href="#留言区" class="headerlink" title="留言区 ^ ^"></a>留言区 ^ ^</h1>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[categories]]></title>
+      <url>http://yoursite.com/categories/index.html</url>
+      <content type="html"></content>
     </entry>
     
     <entry>

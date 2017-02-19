@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="GitHub," />
+  <meta name="keywords" content="java,工具," />
 
 
 
@@ -84,42 +84,36 @@
 
 
 
-<meta name="description" content="前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17.0)
-什么是Github说到什么事github，我们先看wikipedia的描述“GitHub是一">
+<meta name="description" content="简介通过log4j可以看到程序运行时候更加详细的信息。
+使用
+导入log4j的jar包
+复制log4j的配置文件
+
+一个简单的log4j的配置文件
+12345678910111213### 设置日志等级 ###log4j.rootLogger=info, stdout### 输出到控制台 ###log4j.appender.stdout=org.apache.log4j.ConsoleAppend">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub for Windows使用教程（一）">
-<meta property="og:url" content="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/index.html">
+<meta property="og:title" content="Log4j使用">
+<meta property="og:url" content="http://yoursite.com/2017/02/19/Log4j使用/index.html">
 <meta property="og:site_name" content="ISLAND">
-<meta property="og:description" content="前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17.0)
-什么是Github说到什么事github，我们先看wikipedia的描述“GitHub是一">
-<meta property="og:image" content="http://i3.piimg.com/2513fb0c843f35c9.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E7%99%BB%E9%99%86.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E4%BB%93%E5%BA%93%E7%95%8C%E9%9D%A2.png">
-<meta property="og:image" content="http://i3.piimg.com/cf0b5eb355dfb4cf.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/Add%E5%8A%9F%E8%83%BD.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/clone%E5%8A%9F%E8%83%BD.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/create%E5%8A%9F%E8%83%BD.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BAfrist.png">
-<meta property="og:image" content="http://i3.piimg.com/0e76cd4dde922713.png">
-<meta property="og:image" content="http://i3.piimg.com/ce9841870311a76d.png">
-<meta property="og:image" content="http://i3.piimg.com/2f8f72a1976e5986.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E6%B5%8B%E8%AF%95%E6%96%87%E6%9C%AC.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E8%BF%99%E6%98%AF%E8%BF%99%E6%98%AF%E6%96%87%E6%9C%AC.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/History%E7%9B%AE%E5%BD%95.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E7%AC%AC%E4%BA%8C%E6%AC%A1.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E8%BF%99%E4%B8%AA%E6%98%AF%E6%B5%8B%E8%AF%95%E6%96%87%E6%9C%AC.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%A0%E9%99%A4%E7%BA%A2%E8%89%B2%E6%A0%87%E8%AF%86.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BA%A2%E8%89%B2%E6%A0%87%E8%AF%86.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E4%B8%8A%E4%BC%A0.png">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BD%91%E9%A1%B5.png">
-<meta property="og:image" content="http://7xrn7f.com1.z0.glb.clouddn.com/16-5-3/66610926.jpg">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg">
-<meta property="og:updated_time" content="2017-01-06T05:55:30.877Z">
+<meta property="og:description" content="简介通过log4j可以看到程序运行时候更加详细的信息。
+使用
+导入log4j的jar包
+复制log4j的配置文件
+
+一个简单的log4j的配置文件
+12345678910111213### 设置日志等级 ###log4j.rootLogger=info, stdout### 输出到控制台 ###log4j.appender.stdout=org.apache.log4j.ConsoleAppend">
+<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/log4j.png">
+<meta property="og:updated_time" content="2017-02-19T06:26:49.449Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub for Windows使用教程（一）">
-<meta name="twitter:description" content="前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17.0)
-什么是Github说到什么事github，我们先看wikipedia的描述“GitHub是一">
-<meta name="twitter:image" content="http://i3.piimg.com/2513fb0c843f35c9.png">
+<meta name="twitter:title" content="Log4j使用">
+<meta name="twitter:description" content="简介通过log4j可以看到程序运行时候更加详细的信息。
+使用
+导入log4j的jar包
+复制log4j的配置文件
+
+一个简单的log4j的配置文件
+12345678910111213### 设置日志等级 ###log4j.rootLogger=info, stdout### 输出到控制台 ###log4j.appender.stdout=org.apache.log4j.ConsoleAppend">
+<meta name="twitter:image" content="http://7xt81u.com1.z0.glb.clouddn.com/log4j.png">
 
 
 
@@ -147,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/19/Log4j使用/"/>
 
 
 
 
 
-  <title> GitHub for Windows使用教程（一） | ISLAND </title>
+  <title> Log4j使用 | ISLAND </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -319,7 +313,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/19/Log4j使用/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="杨晓辉">
@@ -343,7 +337,7 @@
             
             
               
-                GitHub for Windows使用教程（一）
+                Log4j使用
               
             
           </h1>
@@ -358,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-03T19:09:42+08:00">
-                2016-05-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-19T14:25:11+08:00">
+                2017-02-19
               </time>
             
 
@@ -377,8 +371,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/05/03/GitHub-for-Windows使用教程(一)/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/03/GitHub-for-Windows使用教程(一)/" itemprop="commentCount"></span>
+                <a href="/2017/02/19/Log4j使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/19/Log4j使用/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -388,7 +382,7 @@
 
           
           
-             <span id="/2016/05/03/GitHub-for-Windows使用教程(一)/" class="leancloud_visitors" data-flag-title="GitHub for Windows使用教程（一）">
+             <span id="/2017/02/19/Log4j使用/" class="leancloud_visitors" data-flag-title="Log4j使用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -415,62 +409,18 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于<strong>GitHub for windows (3.0.17.0)</strong></p>
-<h1 id="什么是Github"><a href="#什么是Github" class="headerlink" title="什么是Github"></a>什么是Github</h1><p>说到什么事github，我们先看wikipedia的描述“<a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">GitHub是一个利用Git进行版本控制、专门用于存放软件代码与内容的共享虚拟主机服务。它由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。</a>”</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
-<li><p>下载<a href="https://desktop.github.com/" target="_blank" rel="external">github for windows</a>，安装这里不赘述。</p>
-</li>
-<li><p><a href="https://github.com/" target="_blank" rel="external">注册github账号</a></p>
-</li>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>通过log4j可以看到程序运行时候更加详细的信息。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><ol>
+<li>导入log4j的jar包</li>
+<li>复制log4j的配置文件</li>
 </ol>
-<p><img src="http://i3.piimg.com/2513fb0c843f35c9.png" alt=""></p>
-<ol>
-<li>登陆到github for windows。</li>
-</ol>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%99%BB%E9%99%86.png" alt=""></p>
-<hr>
-<p>准备工作都完了，我们开始正式学习。^_^</p>
-<h1 id="创建第一个代码库"><a href="#创建第一个代码库" class="headerlink" title="创建第一个代码库"></a>创建第一个代码库</h1><h2 id="认识界面"><a href="#认识界面" class="headerlink" title="认识界面"></a>认识界面</h2><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E4%BB%93%E5%BA%93%E7%95%8C%E9%9D%A2.png" alt=""></p>
-<p>github for windows的界面非常清爽，的确符合geek的性质，个人表示非常喜欢。<br>我们来建立第一个仓库，点击左上角的<strong>+号</strong>，初次建立他会有一圈圈的涟漪，非常漂亮哦。<br>打开之后有三个选项，Add，Create，Clone。<br><img src="http://i3.piimg.com/cf0b5eb355dfb4cf.png" alt=""><br>我们分别来介绍一下这三个功能。</p>
-<h3 id="Add功能"><a href="#Add功能" class="headerlink" title="Add功能"></a>Add功能</h3><p>如果本地有工程，就可以使用Add添加</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/Add%E5%8A%9F%E8%83%BD.png" alt=""></p>
-<h3 id="Clone功能"><a href="#Clone功能" class="headerlink" title="Clone功能"></a>Clone功能</h3><p>这个功能其实最好理解了，克隆这名字通俗易懂好理解。<br>如何使用Clone功能呢？</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/clone%E5%8A%9F%E8%83%BD.png" alt=""></p>
-<p>就是将在浏览器上已经创建好的项目导入到本地，换句话说就是下载到本地。</p>
-<h3 id="Create功能"><a href="#Create功能" class="headerlink" title="Create功能"></a>Create功能</h3><p>创建一个代码库，<br>Name填写你的仓库名字。Local path写你将要保存在本地路径。我们主要从这个功能开始github之旅。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/create%E5%8A%9F%E8%83%BD.png" alt=""></p>
-<p>我们在这里填写First，来创建第一个我们自己的repository。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BAfrist.png" alt=""></p>
-<h1 id="开始使用第一个代码库"><a href="#开始使用第一个代码库" class="headerlink" title="开始使用第一个代码库"></a>开始使用第一个代码库</h1><h2 id="修改第一个代码库中内容"><a href="#修改第一个代码库中内容" class="headerlink" title="修改第一个代码库中内容"></a>修改第一个代码库中内容</h2><p>我们来找到刚刚创建的代码库在本地的位置。就是刚刚在local path的地址路径，当然如果你忘了，请右键点击First。<br><img src="http://i3.piimg.com/0e76cd4dde922713.png" alt=""><br>选择Open in Explorer。这样我们就可以转到刚刚的路径下。<br>我们新建一个文本文档。在里面编辑。<br>如下<br><img src="http://i3.piimg.com/ce9841870311a76d.png" alt=""><br>此时的github就会变成这个样子(Changs)：<br><img src="http://i3.piimg.com/2f8f72a1976e5986.png" alt=""><br>你会发现此时github会出现刚刚编辑的内容。</p>
-<ol>
-<li>这个是测试文本</li>
-<li>你好<br>并且前面会有<strong>蓝色标识</strong>，那么这个<strong>蓝色标识</strong>是什么用呢？<br>其实这个蓝色标识是提示你会上改变的文本。比如我第一次只想改变<br><strong>这个是测试文本</strong>并不想把<strong>你好</strong>上传。<br>这时我们点击一下<strong>你好</strong>的前面的<strong>蓝色标识</strong>。</li>
-</ol>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%B5%8B%E8%AF%95%E6%96%87%E6%9C%AC.png" alt=""></p>
-<p>你会发现<strong>你好</strong>前面的蓝色标识没有了。<br>我们填写好<strong>Summer</strong>和<strong>Description</strong><br>Summer就是这次改动的总结，我们也可以理解为标题<em>（必填）</em>，而Description可以理解为详细概况<em>（选填）</em></p>
-<hr>
-<p>我们这里只选择第一个修改对象，也就是<strong>这个是测试文本</strong>就行修改。summer我们填写为<em>第一次修改</em>，Description我们填写为<em>增加了这个是测试文本</em>的内容，之后点击<strong>Commit to master</strong>。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E8%BF%99%E6%98%AF%E8%BF%99%E6%98%AF%E6%96%87%E6%9C%AC.png" alt=""></p>
-<p>切换到<strong>History</strong>目录下</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/History%E7%9B%AE%E5%BD%95.png" alt=""></p>
-<p>我们会发现他改变了。<br>这次我们把<strong>你好</strong>进行添加。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%AC%AC%E4%BA%8C%E6%AC%A1.png" alt=""></p>
-<p>在<strong>History</strong>目录下发生了这样的改变。会在<strong>History</strong>目录下形成一天时间线，来指出每一次的修改标题和内容，同时会把修改的内容用<strong>绿色标识</strong>标出。<br>我们打开本地的文本，删除刚刚添加的第一行<strong>这个是测试文本</strong>。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E8%BF%99%E4%B8%AA%E6%98%AF%E6%B5%8B%E8%AF%95%E6%96%87%E6%9C%AC.png" alt=""></p>
-<p>此时你就会发现github发生了变化。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%A0%E9%99%A4%E7%BA%A2%E8%89%B2%E6%A0%87%E8%AF%86.png" alt=""></p>
-<p>此时的<strong>红色标识</strong>标识删除。我们写好Summer和Description并点击Commit to master。<br>这样我们就删除了第一行。同时在<strong>History</strong>目录下又多了一条时间轴。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BA%A2%E8%89%B2%E6%A0%87%E8%AF%86.png" alt=""></p>
-<p>这样我们就完成了删除。</p>
-<h2 id="上传与同步"><a href="#上传与同步" class="headerlink" title="上传与同步"></a>上传与同步</h2><h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><p>此时，当我们打开github网页，就会发现此时你的修改的内容并没有出现在这里。这是因为你没有进行同步，仅仅是在本地就行了修改。此时我们仅仅需要点击右上角的<strong>publish</strong></p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E4%B8%8A%E4%BC%A0.png" alt=""></p>
-<p>此时你就会本地内容已经上传到网页上。</p>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BD%91%E9%A1%B5.png" alt=""></p>
-<h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>当你的代码库上传后就会发现，原来的<strong>publish</strong>以及变为了<strong>Sync</strong>。</p>
-<p><img src="http://7xrn7f.com1.z0.glb.clouddn.com/16-5-3/66610926.jpg" alt=""></p>
-<p>点击<strong>Sync</strong>同步代码库！</p>
-<h1 id="打赏支持"><a href="#打赏支持" class="headerlink" title="打赏支持"></a>打赏支持</h1><hr>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg" alt=""></p>
+<p>一个简单的log4j的配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">### 设置日志等级 ###</span><br><span class="line">log4j.rootLogger=info, stdout</span><br><span class="line">### 输出到控制台 ###</span><br><span class="line">log4j.appender.stdout=org.apache.log4j.ConsoleAppender</span><br><span class="line">log4j.appender.stdout.Target=System.err</span><br><span class="line">#log4j.appender.stdout=System.err</span><br><span class="line">log4j.appender.stdout.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.stdout.layout.ConversionPattern=%d&#123;ABSOLUTE&#125; %5p %c&#123;1&#125;:%L - %m%n</span><br><span class="line">### 输出到日至文件</span><br><span class="line">log4j.appender.file=org.apache.log4j.FileAppender</span><br><span class="line">log4j.appender.file.File=/home/youngxhui/IdeaProjects/SpringDemo/spring-aop-xml/src/mylog.log</span><br><span class="line">log4j.appender.file.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.file.layout.ConversionPattern=%&#123;ABSOLUTE&#125; %5p %c&#123;1&#125;:%L - %m%n</span><br></pre></td></tr></table></figure>
+<h1 id="设置日志级别"><a href="#设置日志级别" class="headerlink" title="设置日志级别"></a>设置日志级别</h1><ul>
+<li>info：基本信息</li>
+<li>debug：更详细的信息</li>
+</ul>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/log4j.png" alt=""></p>
 
       
     </div>
@@ -494,7 +444,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/GitHub/" rel="tag"># GitHub</a>
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/工具/" rel="tag"># 工具</a>
           
         </div>
       
@@ -503,8 +455,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/27/大学？大学？大学？/" rel="next" title="大学？大学？大学？">
-                <i class="fa fa-chevron-left"></i> 大学？大学？大学？
+              <a href="/2017/02/08/Spring学习-一/" rel="next" title="Spring学习(一)">
+                <i class="fa fa-chevron-left"></i> Spring学习(一)
               </a>
             
           </div>
@@ -512,10 +464,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/13/GitHub-for-Windows使用教程(二)/" rel="prev" title="GitHub for Windows使用教程(二)">
-                GitHub for Windows使用教程(二) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -541,8 +489,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/03/GitHub-for-Windows使用教程(一)/"
-           data-title="GitHub for Windows使用教程（一）" data-url="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/">
+      <div class="ds-thread" data-thread-key="2017/02/19/Log4j使用/"
+           data-title="Log4j使用" data-url="http://yoursite.com/2017/02/19/Log4j使用/">
       </div>
     
   </div>
@@ -684,7 +632,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Github"><span class="nav-number">2.</span> <span class="nav-text">什么是Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">3.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建第一个代码库"><span class="nav-number">4.</span> <span class="nav-text">创建第一个代码库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#认识界面"><span class="nav-number">4.1.</span> <span class="nav-text">认识界面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Add功能"><span class="nav-number">4.1.1.</span> <span class="nav-text">Add功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clone功能"><span class="nav-number">4.1.2.</span> <span class="nav-text">Clone功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create功能"><span class="nav-number">4.1.3.</span> <span class="nav-text">Create功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始使用第一个代码库"><span class="nav-number">5.</span> <span class="nav-text">开始使用第一个代码库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改第一个代码库中内容"><span class="nav-number">5.1.</span> <span class="nav-text">修改第一个代码库中内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上传与同步"><span class="nav-number">5.2.</span> <span class="nav-text">上传与同步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#上传"><span class="nav-number">5.2.1.</span> <span class="nav-text">上传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同步"><span class="nav-number">5.2.2.</span> <span class="nav-text">同步</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打赏支持"><span class="nav-number">6.</span> <span class="nav-text">打赏支持</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置日志级别"><span class="nav-number">3.</span> <span class="nav-text">设置日志级别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例"><span class="nav-number">4.</span> <span class="nav-text">实例</span></a></li></ol></div>
             
 
           </div>

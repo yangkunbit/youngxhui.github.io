@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    
+  <url>
+    <loc>http://yoursite.com/2017/02/19/Log4j%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2017-02-19T06:26:49.449Z</lastmod>
+    <data>
+        <display>
+        <title>Log4j使用</title>
+        <pubTime>2017-02-19T06:25:11.000Z</pubTime>
+        
+        <tag>java </tag>
+         
+        <tag>工具 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://yoursite.com/2017/02/08/Spring%E5%AD%A6%E4%B9%A0-%E4%B8%80/</loc>
     <lastmod>2017-02-08T03:01:10.524Z</lastmod>
@@ -31,9 +51,9 @@
         
         <tag>java </tag>
          
-        <tag>Maven </tag>
-         
         <tag>工具 </tag>
+         
+        <tag>Maven </tag>
          
          
            
@@ -41,7 +61,6 @@
     </data>
     </url>
 
-    
     
     
   <url>
