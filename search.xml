@@ -1686,8 +1686,6 @@ $ git commit -m &quot;branch test&quot;
 <h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><blockquote>
 <p>Android<br>Spring</p>
 </blockquote>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><iframe src="http://http://youngxhui.github.io/about/graph/coding" frameborder="0" scrolling="no" width="1200"></iframe>
-
 <h1 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h1><blockquote>
 <p>邮箱：youngxhui@gmail.com</p>
 </blockquote>
@@ -1695,14 +1693,14 @@ $ git commit -m &quot;branch test&quot;
     </entry>
     
     <entry>
-      <title><![CDATA[categories]]></title>
-      <url>http://yoursite.com/categories/index.html</url>
+      <title></title>
+      <url>http://yoursite.com/tags/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
-      <title></title>
-      <url>http://yoursite.com/tags/index.html</url>
+      <title><![CDATA[categories]]></title>
+      <url>http://yoursite.com/categories/index.html</url>
       <content type="html"></content>
     </entry>
     
