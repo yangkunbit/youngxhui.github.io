@@ -4,6 +4,190 @@
   
     
     <entry>
+      <title><![CDATA[Spring学习记录(二)]]></title>
+      <url>http://yoursite.com/2017/03/02/Spring%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95-%E4%BA%8C/</url>
+      <content type="html"><![CDATA[<h1 id="AOP简述"><a href="#AOP简述" class="headerlink" title="AOP简述"></a>AOP简述</h1><p>面向切面编程，扩展功能不修改源代码实现。AOP采用横向抽取机制，取代了传统的纵向继承体系重复代码。</p>
+<h1 id="AOP底层原理"><a href="#AOP底层原理" class="headerlink" title="AOP底层原理"></a>AOP底层原理</h1><p>#AOP操作相关术语</p>
+<ul>
+<li>链接点：类里面的被增强的方法。</li>
+<li>切入点：类里面的增强的方法，在实际操作中，实际增强的方法叫切入点。</li>
+<li>通知/增强：增强的逻辑，称为增强，比如扩展日志功能，这个日志功能称为增强。<br> 前置通知：在方法之前执行<br> 后置通知：在方法之后执行<br> 异常通知：出现异之后执行<br> 最终通知：在后置之后执行<br> 环绕通知：在方法之前和之后执行</li>
+<li>切面：把增强应用到具体的方法上面，这个过程称为切面。把增强用到切入点的过程。</li>
+</ul>
+<h1 id="Spring的AOP操作"><a href="#Spring的AOP操作" class="headerlink" title="Spring的AOP操作"></a>Spring的AOP操作</h1><h2 id="Aspectj框架"><a href="#Aspectj框架" class="headerlink" title="Aspectj框架"></a>Aspectj框架</h2><p>在Spring进行aop操作，使用<code>Aspectj</code>框架，这个框架本身不是Spring的一部分，只是一起使用进行AOP操作。</p>
+<ul>
+<li>版本在2.0以后支持切点表达式支持。</li>
+</ul>
+<h2 id="基于Aspectj实现AOP操作"><a href="#基于Aspectj实现AOP操作" class="headerlink" title="基于Aspectj实现AOP操作"></a>基于Aspectj实现AOP操作</h2><ul>
+<li>相关ja包</li>
+</ul>
+<blockquote>
+<p><code>aopalliance</code>,<code>aspectjweaver</code>,<code>spring-aop</code>,<code>spring-aspects</code></p>
+</blockquote>
+<ul>
+<li>创建Spring核心配置文件导入AOP约束。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span><br><span class="line">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">       <span class="attr">xmlns:aop</span>=<span class="string">"http://www.springframework.org/schema/aop"</span></span><br><span class="line">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans</span><br><span class="line">       http://www.springframework.org/schema/beans/spring-beans.xsd</span><br><span class="line">       http://www.springframework.org/schema/aop</span><br><span class="line">       http://www.springframework.org/schema/aop/spring-aop.xsd"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="基于Aspectj的xml实现"><a href="#基于Aspectj的xml实现" class="headerlink" title="基于Aspectj的xml实现"></a>基于Aspectj的xml实现</h3><ul>
+<li><p>常用表达式<br>通过<code>execution</code>函数表达式实现。</p>
+<blockquote>
+<p>execution(&lt;访问修饰符&gt;?&lt;返回类型&gt;&lt;方法名&gt;(&lt;参数&gt;)&lt;异常&gt;)</p>
+</blockquote>
+</li>
+<li><p>execution(<em> /增强方法的全路径/): </em>代表任意修饰符，空格后跟随增强方法的全路径。</p>
+</li>
+<li>execution(<em> com.Hello.</em>):代表该类的所有方法</li>
+<li>execution(<em> </em>.*(..))</li>
+<li>execution(<em> save</em>(..)) 表示以<code>save</code>开头的方法进行增强。</li>
+</ul>
+<p>xml配置代码<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--1.配置类--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"book"</span> <span class="attr">class</span>=<span class="string">"aop.Book"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"myBook"</span> <span class="attr">class</span>=<span class="string">"aop.MyBook"</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--2.配置aop操作--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aop:config</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--2.1配置切入点--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aop:pointcut</span> <span class="attr">id</span>=<span class="string">"pointcut1"</span> <span class="attr">expression</span>=<span class="string">"execution(* aop.Book.add())"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--2.2配置切面--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aop:aspect</span> <span class="attr">ref</span>=<span class="string">"myBook"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">aop:before</span> <span class="attr">method</span>=<span class="string">"before1"</span> <span class="attr">pointcut-ref</span>=<span class="string">"pointcut1"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">aop:aspect</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">aop:config</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="基于Aspectj的注解实现"><a href="#基于Aspectj的注解实现" class="headerlink" title="基于Aspectj的注解实现"></a>基于Aspectj的注解实现</h3><p>创建类的对象，在spring的配置文件中开启aop操作。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">aop:aspectj-autoproxy</span>&gt;</span> <span class="tag">&lt;/<span class="name">aop:aspectj-autoproxy</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>通过注解来实现。</p>
+<p>在增强类上<br><code>@Aspect</code>注解类，<code>@Before</code>注解方法(前置通知)。</p>
+<ul>
+<li>@Before</li>
+<li>@AfterReturning</li>
+<li>@Around</li>
+<li>@AfterThrowing</li>
+<li>@After</li>
+</ul>
+<h1 id="Spring的JdbcTemplate操作"><a href="#Spring的JdbcTemplate操作" class="headerlink" title="Spring的JdbcTemplate操作"></a>Spring的JdbcTemplate操作</h1><p><code>Spring</code>在<code>dao</code>层，使用<code>JdbcTemplate</code>，Spring为各种支持的持久化技术，都提供了简单操作的模板和回调。</p>
+<table>
+<thead>
+<tr>
+<th>ORM持久化技术</th>
+<th>模板类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JDBC</td>
+<td>org.springframework.jdbc.core.JdbcTemplate</td>
+</tr>
+<tr>
+<td>Hibemate5.0</td>
+<td>org.springframework.orm.hibernate5.HibernateTemplate</td>
+</tr>
+<tr>
+<td>IBatis(MyBatis)</td>
+<td>org.springframework.orm.ibatis.sqlMapClientTempate</td>
+</tr>
+<tr>
+<td>JPA</td>
+<td>org.springframework.orm.jpa.JpaTempate</td>
+</tr>
+</tbody>
+</table>
+<h2 id="JdbcTemplate使用"><a href="#JdbcTemplate使用" class="headerlink" title="JdbcTemplate使用"></a>JdbcTemplate使用</h2><p>都是对数据库进行<code>crud</code>操作。</p>
+<ul>
+<li>导入JdbcTemplate相关jar包</li>
+</ul>
+<blockquote>
+<p><code>spring-jdbc</code> <code>spring-tx</code></p>
+</blockquote>
+<ul>
+<li>创建对象设置数据库信息，比如：加载驱动，设置url，用户名，密码等。<br>实例代码</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DriverManagerDataSource dataSource = <span class="keyword">new</span> DriverManagerDataSource();</span><br><span class="line">        dataSource.setDriverClassName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">        dataSource.setUsername(<span class="string">"root"</span>);</span><br><span class="line">        dataSource.setUrl(<span class="string">"jdbc:mysql://localhost:3306/JdbcDemo"</span>);</span><br><span class="line">        dataSource.setPassword(<span class="string">"12qwaszx"</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>创建JdbcTemplate模板对象，设置数据源。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JdbcTemplate jdbcTemplate = <span class="keyword">new</span> JdbcTemplate(dataSource);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>调用JdbcTemplate对象里面的方法实现操作。</p>
+</li>
+</ul>
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String sql = <span class="string">"INSERT INTO jdbcTest (id, name, password) VALUES (?,?,?)"</span>;</span><br><span class="line">jdbcTemplate.update(sql, <span class="string">"1"</span>, <span class="string">"lucy"</span>, <span class="string">"1234"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String sql = <span class="string">"UPDATE jdbcTest\n"</span> +</span><br><span class="line">            <span class="string">"SET name = ?\n"</span> +</span><br><span class="line">            <span class="string">"WHERE id=?"</span>;</span><br><span class="line">jdbcTemplate.update(sql,<span class="string">"cat"</span>,<span class="string">"1"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String sql = <span class="string">"DELETE FROM jdbcTest WHERE name=?"</span>;</span><br><span class="line">jdbcTemplate.update(sql,<span class="string">"cat"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><p><code>JdbcTemplate</code>实现查询，有接口<code>RowMapper</code>,<br><code>JdbcTemplate</code>针对这个接口美欧提供实现类，等到不同的类型数据需要自己封装</p>
+<ul>
+<li><p>查询一个值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//查询返回某值</span><br><span class="line">        String sql1=&quot;SELECT count(*) FROM jdbcTest&quot;;</span><br><span class="line">        int count=template.queryForObject(sql1,Integer.class);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>返回对象</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询返回对象</span></span><br><span class="line">        String sql2 = <span class="string">"select * from jdbcTest where name=?"</span>;</span><br><span class="line">        <span class="comment">//调用jdbcTemplate方法</span></span><br><span class="line">        User user=template.queryForObject(sql2,<span class="keyword">new</span> MyRowMapper() , <span class="string">"tom"</span>);</span><br><span class="line">        System.out.println(user);</span><br></pre></td></tr></table></figure>
+<p>要自己封装这个类<br>其中querForObject这个方法的第二个值为RowMapper，需要自己进行封装。<br>MyRowMapper.class<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyRowMapper</span> <span class="keyword">implements</span> <span class="title">RowMapper</span>&lt;<span class="title">User</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">mapRow</span><span class="params">(ResultSet resultSet, <span class="keyword">int</span> i)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line"><span class="comment">//        从结果集里面把数据得到</span></span><br><span class="line">        String username = resultSet.getString(<span class="string">"name"</span>);</span><br><span class="line">        String password = resultSet.getString(<span class="string">"password"</span>);</span><br><span class="line"><span class="comment">//        把数据封装到对象里面</span></span><br><span class="line">        User user = <span class="keyword">new</span> User();</span><br><span class="line">        user.setName(username);</span><br><span class="line">        user.setPassword(password);</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>返回list集合</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String sql3 = &quot;select * from jdbcTest&quot;;</span><br><span class="line">List&lt;User&gt; list = template.query(sql3, new MyRowMapper());</span><br><span class="line">System.out.println(list);</span><br></pre></td></tr></table></figure>
+<h2 id="Spring配置连接池和dao使用JdbcTemplate"><a href="#Spring配置连接池和dao使用JdbcTemplate" class="headerlink" title="Spring配置连接池和dao使用JdbcTemplate"></a>Spring配置连接池和dao使用JdbcTemplate</h2><h3 id="配置c3p0连接池"><a href="#配置c3p0连接池" class="headerlink" title="配置c3p0连接池"></a>配置c3p0连接池</h3><ol>
+<li>导入jar包 <code>c3p0</code>和<code>mchange-commons-java</code></li>
+<li>在Spring的配置文件配置连接池</li>
+<li>在dao中使用</li>
+</ol>
+<h3 id="dao使用jdbctemplate"><a href="#dao使用jdbctemplate" class="headerlink" title="dao使用jdbctemplate"></a>dao使用jdbctemplate</h3><ol>
+<li>在Service中注入Dao。</li>
+<li>在Dao中注入jdbc模板。</li>
+<li>在模板中注入连接池。</li>
+<li>在连接池中写配置。</li>
+</ol>
+<p>示例代码</p>
+<p>UserService.class</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.c3p0;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by youngxhui</span><br><span class="line"> * Time is 17-2-19.</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> UserDao userDao;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserDao</span><span class="params">(UserDao userDao)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.userDao = userDao;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">()</span></span>&#123;</span><br><span class="line">        userDao.add();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>UserDao.class</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.c3p0;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.jdbc.core.JdbcTemplate;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by youngxhui</span><br><span class="line"> * Time is 17-2-19.</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> JdbcTemplate jdbcTemplate;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        String sql=<span class="string">"INSERT INTO jdbcTest (id, name, password) VALUES (?,?,?)"</span>;</span><br><span class="line">        jdbcTemplate.update(sql, <span class="number">5</span>, <span class="string">"lili"</span>, <span class="string">"123456"</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setJdbcTemplate</span><span class="params">(JdbcTemplate jdbcTemplate)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.jdbcTemplate = jdbcTemplate;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>SpringContext.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span><br><span class="line">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--配置c3p0的连接池--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"comboPooledDataSource"</span> <span class="attr">class</span>=<span class="string">"com.mchange.v2.c3p0.ComboPooledDataSource"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driverClass"</span> <span class="attr">value</span>=<span class="string">"com.mysql.jdbc.Driver"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbcUrl"</span> <span class="attr">value</span>=<span class="string">"jdbc:mysql://localhost:3306/JdbcDemo"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"user"</span> <span class="attr">value</span>=<span class="string">"root"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"12qwaszx"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userService"</span> <span class="attr">class</span>=<span class="string">"com.c3p0.UserService"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"userDao"</span> <span class="attr">ref</span>=<span class="string">"userDao"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"com.c3p0.UserDao"</span> <span class="attr">id</span>=<span class="string">"userDao"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbcTemplate"</span> <span class="attr">ref</span>=<span class="string">"jdbcTemplate"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.springframework.jdbc.core.JdbcTemplate"</span> <span class="attr">id</span>=<span class="string">"jdbcTemplate"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> <span class="attr">ref</span>=<span class="string">"comboPooledDataSource"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="Spring事务管理"><a href="#Spring事务管理" class="headerlink" title="Spring事务管理"></a>Spring事务管理</h1><h2 id="什么是事务"><a href="#什么是事务" class="headerlink" title="什么是事务"></a>什么是事务</h2><p>事务是访问数据库的一个操作序列，数据库应用系统通过事务集来完成对数据库的存取。事务的正确执行使得数据库从一种状态转换成另一种状态。</p>
+<h2 id="事务特性"><a href="#事务特性" class="headerlink" title="事务特性"></a>事务特性</h2><ul>
+<li>原子性（atomicity）</li>
+<li>一致性（consistency</li>
+<li>隔离性 （isolation）</li>
+<li>持久性（durability）</li>
+</ul>
+<h2 id="Sping事务管理api"><a href="#Sping事务管理api" class="headerlink" title="Sping事务管理api"></a>Sping事务管理api</h2><p>spring对事务管理的两种方式</p>
+<ul>
+<li>编程式事务管理(不用)</li>
+<li>声明式事务管理<ul>
+<li>基于xml配置文件实现</li>
+<li>基于注解实现</li>
+</ul>
+</li>
+</ul>
+<h3 id="api介绍"><a href="#api介绍" class="headerlink" title="api介绍"></a>api介绍</h3><p>Spring事务管理高层抽象主要包含3个接口</p>
+<ul>
+<li>PlatformTransactionManager事务管理器</li>
+<li>TransactionDefinition事务定义信息</li>
+<li>TransactionStatus事务具体运行状态</li>
+</ul>
+<p>PlatformTransactionManager针对不同的dao层，提供了不同的接口实现类</p>
+<table>
+<thead>
+<tr>
+<th>事务</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>org.springframework.idbc.datasource.DataSourceTransactionManager</td>
+<td>使用Spring JDBC或iBatis进行持久化数据时使用</td>
+</tr>
+<tr>
+<td>org.springframework.orm.hibernate5.HibernateTransactionManger</td>
+<td>使用Hibernate5.0版本进行持久化数据时使用</td>
+</tr>
+<tr>
+<td>org.springframework.orm.jpa.JpaTransactionManager</td>
+<td>使用JPA进行持久化</td>
+</tr>
+<tr>
+<td>org.springframework.jdo.JdoTransactionManager</td>
+<td>当持久化机制是Jdo时使用</td>
+</tr>
+<tr>
+<td>org.springframework.transaction.ita.JtaTransactionManager</td>
+<td>使用一个JTA实现来管理事务，在一个事务跨越多个资源时必须使用</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Log4j使用]]></title>
       <url>http://yoursite.com/2017/02/19/Log4j%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>通过log4j可以看到程序运行时候更加详细的信息。</p>
@@ -1671,6 +1855,18 @@ $ git commit -m &quot;branch test&quot;
   
     
     <entry>
+      <title><![CDATA[categories]]></title>
+      <url>http://yoursite.com/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://yoursite.com/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title></title>
       <url>http://yoursite.com/about/index.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/100.png" alt="Alt text"> </p>
@@ -1690,18 +1886,6 @@ $ git commit -m &quot;branch test&quot;
 <p>邮箱：youngxhui@gmail.com</p>
 </blockquote>
 <h1 id="留言区"><a href="#留言区" class="headerlink" title="留言区 ^ ^"></a>留言区 ^ ^</h1>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[categories]]></title>
-      <url>http://yoursite.com/categories/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>http://yoursite.com/tags/index.html</url>
-      <content type="html"></content>
     </entry>
     
   

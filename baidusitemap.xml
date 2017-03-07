@@ -2,6 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://yoursite.com/2017/03/02/Spring%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95-%E4%BA%8C/</loc>
+    <lastmod>2017-03-07T13:26:22.565Z</lastmod>
+    <data>
+        <display>
+        <title>Spring学习记录(二)</title>
+        <pubTime>2017-03-02T12:29:13.000Z</pubTime>
+        
+        <tag>java </tag>
+         
+        <tag>Spring </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2017/02/19/Log4j%E4%BD%BF%E7%94%A8/</loc>
