@@ -1855,12 +1855,6 @@ $ git commit -m &quot;branch test&quot;
   
     
     <entry>
-      <title><![CDATA[categories]]></title>
-      <url>http://yoursite.com/categories/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title></title>
       <url>http://yoursite.com/about/index.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/100.png" alt="Alt text"> </p>
@@ -1880,6 +1874,12 @@ $ git commit -m &quot;branch test&quot;
 <p>邮箱：youngxhui@gmail.com</p>
 </blockquote>
 <h1 id="留言区"><a href="#留言区" class="headerlink" title="留言区 ^ ^"></a>留言区 ^ ^</h1>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[categories]]></title>
+      <url>http://yoursite.com/categories/index.html</url>
+      <content type="html"></content>
     </entry>
     
     <entry>
