@@ -27,6 +27,9 @@
 
 
 
+
+
+
   
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
@@ -101,11 +104,11 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"always"},
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '6254858898126145000',
+      userId: '0',
       author: '博主'
     },
     algolia: {
@@ -135,6 +138,8 @@
 
 
 
+
+
   <script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
@@ -152,38 +157,42 @@
 
 
 
+
+
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
+  <div class="container sidebar-position-left 
    page-home 
  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">ISLAND</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ISLAND</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">随心随性</p>
+      
   </div>
-    
-      <p class="site-subtitle">随心随性</p>
-    
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -228,7 +237,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于/留言
+            关于
           </a>
         </li>
       
@@ -244,32 +253,9 @@
       
 
       
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
   
 </nav>
 
@@ -294,20 +280,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/13/GitHub-for-Windows使用教程(二)/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/13/GitHub-for-Windows使用教程(二)/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -328,7 +311,6 @@
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -337,17 +319,10 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-13T07:48:34+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-13T07:48:34+08:00">
                 2016-05-13
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长2 分钟 </span>
-  </span>
-
 
             
 
@@ -358,8 +333,6 @@
 
           
             
-          
-
           
 
           
@@ -380,10 +353,11 @@
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -394,19 +368,32 @@
       
         
           
-          分支的使用创建分支我们创建第一个分支取名为“new masterh”,点击Create new branch创建第一个分支。
+            <h1 id="分支的使用"><a href="#分支的使用" class="headerlink" title="分支的使用"></a>分支的使用</h1><h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><p>我们创建第一个分支取名为<strong>“new masterh”</strong>,点击<strong>Create new branch</strong>创建第一个分支。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF.png" alt=""></p>
+<p>我们发现此时的分支已经切换到了我们刚刚创建的分支<strong>new masterch</strong></p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF.png" alt=""></p>
+<p>我们来修改<strong>new masterch</strong>分支上的内容。<br>我们仍旧打开<strong>FirstDemo.txt</strong>进行编辑。输入以下内容</p>
+<blockquote>
+<p>创建的第一个分支。</p>
+</blockquote>
+<p>打开github进行，填写<strong>Summary</strong>和<strong>Description</strong></p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E4%BF%AE%E6%94%B9%E5%88%86%E6%94%AF%E5%86%85%E5%AE%B9.png" alt=""></p>
+<p>之后我们点击<strong>Commit to new-master</strong><br>在<strong>History</strong>目录下，我们可以看到会有两条主线，分别是<strong>master</strong>和<strong>new-master</strong>并且在<strong>new-master</strong>的分支下又一个蓝色的<strong>实线空心圈</strong>和一个<strong>虚线空心圈</strong>。<br><strong>实线圈</strong>表示当前的节点，<strong>空心圈</strong>表示下一次修改时的节点。<br><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF.png" alt=""><br><strong>红线</strong>标示的部分就是当前的分支<br><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BA%A2%E7%BA%BF%E5%BC%BA%E8%B0%83.png" alt=""></p>
+<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><p>点击<strong>红色</strong>划线部分就会出现分支的列表<br><img src="http://7xt81u.com1.z0.glb.clouddn.com/5d9c09b750eec11d.png" alt=""><br>我们点击<strong>master</strong>就会切换到<strong>master</strong>分支。</p>
+<h2 id="上传-同步分支"><a href="#上传-同步分支" class="headerlink" title="上传/同步分支"></a>上传/同步分支</h2><p>这个操作和同步仓库是一个操作，点击<strong>Publish/Sync</strong>上传或同步分支。</p>
+<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><p>首先要把分支切换到你要删除的分支下，如我们要删除<strong>new master</strong>，将分支切换到<strong>new master</strong>点击右上角齿轮就会出现<strong>Delete new master</strong></p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF.png" alt=""></p>
+<p>点击<strong>Delete new master</strong>就会弹出一个对话框，询问删除的内容。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%A1%AE%E8%AE%A4%E5%88%A0%E9%99%A4.png" alt=""></p>
+<p>第一个<strong>yes ，Delete both</strong>是将本地与网页全部删除；<br>第二个<strong>Delete local only</strong>仅仅是删除本地。<br>第三个是取消。</p>
+<h2 id="合并两个分支"><a href="#合并两个分支" class="headerlink" title="合并两个分支"></a>合并两个分支</h2><p>将一个分支与<strong>master</strong>分支进行合并。<br>我们首先把分支切换到<strong>master</strong>下，点击<strong>Update from new-branch</strong>进行分支的合并。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C.png" alt=""></p>
+<p>此时我们查看<strong>history</strong>目录下就会</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF.png" alt=""></p>
+<h1 id="打赏支持"><a href="#打赏支持" class="headerlink" title="打赏支持"></a>打赏支持</h1><hr>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg" alt=""></p>
 
-我们发现此时的分支已经切换到了我们刚刚创建的分支new masterch
-
-我们来修改new masterch分支上的内容。我们仍旧打开FirstDemo.txt进行编辑。
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/05/13/GitHub-for-Windows使用教程(二)/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -419,8 +406,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -429,7 +421,6 @@
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -444,20 +435,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/03/GitHub-for-Windows使用教程(一)/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -478,7 +466,6 @@
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -487,17 +474,10 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-03T19:09:42+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-03T19:09:42+08:00">
                 2016-05-03
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长4 分钟 </span>
-  </span>
-
 
             
 
@@ -508,8 +488,6 @@
 
           
             
-          
-
           
 
           
@@ -530,10 +508,11 @@
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -544,15 +523,64 @@
       
         
           
-          前言鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于GitHub for windows (3.0.17
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/05/03/GitHub-for-Windows使用教程(一)/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>鉴于网上目前的教材都太落后，github for windows已经更新了多个版本，好多界面都发生了变化，所以来写这个教程。目的是为了帮助和我一样初学github，但是苦于找不到教程的同学，为了写最详细的教程。配备了大量的图文介绍。该教程是基于<strong>GitHub for windows (3.0.17.0)</strong></p>
+<h1 id="什么是Github"><a href="#什么是Github" class="headerlink" title="什么是Github"></a>什么是Github</h1><p>说到什么事github，我们先看wikipedia的描述“<a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">GitHub是一个利用Git进行版本控制、专门用于存放软件代码与内容的共享虚拟主机服务。它由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。</a>”</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
+<li><p>下载<a href="https://desktop.github.com/" target="_blank" rel="external">github for windows</a>，安装这里不赘述。</p>
+</li>
+<li><p><a href="https://github.com/" target="_blank" rel="external">注册github账号</a></p>
+</li>
+</ol>
+<p><img src="http://i3.piimg.com/2513fb0c843f35c9.png" alt=""></p>
+<ol>
+<li>登陆到github for windows。</li>
+</ol>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%99%BB%E9%99%86.png" alt=""></p>
+<hr>
+<p>准备工作都完了，我们开始正式学习。^_^</p>
+<h1 id="创建第一个代码库"><a href="#创建第一个代码库" class="headerlink" title="创建第一个代码库"></a>创建第一个代码库</h1><h2 id="认识界面"><a href="#认识界面" class="headerlink" title="认识界面"></a>认识界面</h2><p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E4%BB%93%E5%BA%93%E7%95%8C%E9%9D%A2.png" alt=""></p>
+<p>github for windows的界面非常清爽，的确符合geek的性质，个人表示非常喜欢。<br>我们来建立第一个仓库，点击左上角的<strong>+号</strong>，初次建立他会有一圈圈的涟漪，非常漂亮哦。<br>打开之后有三个选项，Add，Create，Clone。<br><img src="http://i3.piimg.com/cf0b5eb355dfb4cf.png" alt=""><br>我们分别来介绍一下这三个功能。</p>
+<h3 id="Add功能"><a href="#Add功能" class="headerlink" title="Add功能"></a>Add功能</h3><p>如果本地有工程，就可以使用Add添加</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/Add%E5%8A%9F%E8%83%BD.png" alt=""></p>
+<h3 id="Clone功能"><a href="#Clone功能" class="headerlink" title="Clone功能"></a>Clone功能</h3><p>这个功能其实最好理解了，克隆这名字通俗易懂好理解。<br>如何使用Clone功能呢？</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/clone%E5%8A%9F%E8%83%BD.png" alt=""></p>
+<p>就是将在浏览器上已经创建好的项目导入到本地，换句话说就是下载到本地。</p>
+<h3 id="Create功能"><a href="#Create功能" class="headerlink" title="Create功能"></a>Create功能</h3><p>创建一个代码库，<br>Name填写你的仓库名字。Local path写你将要保存在本地路径。我们主要从这个功能开始github之旅。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/create%E5%8A%9F%E8%83%BD.png" alt=""></p>
+<p>我们在这里填写First，来创建第一个我们自己的repository。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BAfrist.png" alt=""></p>
+<h1 id="开始使用第一个代码库"><a href="#开始使用第一个代码库" class="headerlink" title="开始使用第一个代码库"></a>开始使用第一个代码库</h1><h2 id="修改第一个代码库中内容"><a href="#修改第一个代码库中内容" class="headerlink" title="修改第一个代码库中内容"></a>修改第一个代码库中内容</h2><p>我们来找到刚刚创建的代码库在本地的位置。就是刚刚在local path的地址路径，当然如果你忘了，请右键点击First。<br><img src="http://i3.piimg.com/0e76cd4dde922713.png" alt=""><br>选择Open in Explorer。这样我们就可以转到刚刚的路径下。<br>我们新建一个文本文档。在里面编辑。<br>如下<br><img src="http://i3.piimg.com/ce9841870311a76d.png" alt=""><br>此时的github就会变成这个样子(Changs)：<br><img src="http://i3.piimg.com/2f8f72a1976e5986.png" alt=""><br>你会发现此时github会出现刚刚编辑的内容。</p>
+<ol>
+<li>这个是测试文本</li>
+<li>你好<br>并且前面会有<strong>蓝色标识</strong>，那么这个<strong>蓝色标识</strong>是什么用呢？<br>其实这个蓝色标识是提示你会上改变的文本。比如我第一次只想改变<br><strong>这个是测试文本</strong>并不想把<strong>你好</strong>上传。<br>这时我们点击一下<strong>你好</strong>的前面的<strong>蓝色标识</strong>。</li>
+</ol>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%B5%8B%E8%AF%95%E6%96%87%E6%9C%AC.png" alt=""></p>
+<p>你会发现<strong>你好</strong>前面的蓝色标识没有了。<br>我们填写好<strong>Summer</strong>和<strong>Description</strong><br>Summer就是这次改动的总结，我们也可以理解为标题<em>（必填）</em>，而Description可以理解为详细概况<em>（选填）</em></p>
+<hr>
+<p>我们这里只选择第一个修改对象，也就是<strong>这个是测试文本</strong>就行修改。summer我们填写为<em>第一次修改</em>，Description我们填写为<em>增加了这个是测试文本</em>的内容，之后点击<strong>Commit to master</strong>。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E8%BF%99%E6%98%AF%E8%BF%99%E6%98%AF%E6%96%87%E6%9C%AC.png" alt=""></p>
+<p>切换到<strong>History</strong>目录下</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/History%E7%9B%AE%E5%BD%95.png" alt=""></p>
+<p>我们会发现他改变了。<br>这次我们把<strong>你好</strong>进行添加。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%AC%AC%E4%BA%8C%E6%AC%A1.png" alt=""></p>
+<p>在<strong>History</strong>目录下发生了这样的改变。会在<strong>History</strong>目录下形成一天时间线，来指出每一次的修改标题和内容，同时会把修改的内容用<strong>绿色标识</strong>标出。<br>我们打开本地的文本，删除刚刚添加的第一行<strong>这个是测试文本</strong>。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E8%BF%99%E4%B8%AA%E6%98%AF%E6%B5%8B%E8%AF%95%E6%96%87%E6%9C%AC.png" alt=""></p>
+<p>此时你就会发现github发生了变化。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E5%88%A0%E9%99%A4%E7%BA%A2%E8%89%B2%E6%A0%87%E8%AF%86.png" alt=""></p>
+<p>此时的<strong>红色标识</strong>标识删除。我们写好Summer和Description并点击Commit to master。<br>这样我们就删除了第一行。同时在<strong>History</strong>目录下又多了一条时间轴。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BA%A2%E8%89%B2%E6%A0%87%E8%AF%86.png" alt=""></p>
+<p>这样我们就完成了删除。</p>
+<h2 id="上传与同步"><a href="#上传与同步" class="headerlink" title="上传与同步"></a>上传与同步</h2><h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><p>此时，当我们打开github网页，就会发现此时你的修改的内容并没有出现在这里。这是因为你没有进行同步，仅仅是在本地就行了修改。此时我们仅仅需要点击右上角的<strong>publish</strong></p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E4%B8%8A%E4%BC%A0.png" alt=""></p>
+<p>此时你就会本地内容已经上传到网页上。</p>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E7%BD%91%E9%A1%B5.png" alt=""></p>
+<h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>当你的代码库上传后就会发现，原来的<strong>publish</strong>以及变为了<strong>Sync</strong>。</p>
+<p><img src="http://7xrn7f.com1.z0.glb.clouddn.com/16-5-3/66610926.jpg" alt=""></p>
+<p>点击<strong>Sync</strong>同步代码库！</p>
+<h1 id="打赏支持"><a href="#打赏支持" class="headerlink" title="打赏支持"></a>打赏支持</h1><hr>
+<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg" alt=""></p>
+
+          
         
       
     </div>
@@ -565,8 +593,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -575,7 +608,6 @@
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -590,20 +622,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/27/大学？大学？大学？/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/27/大学？大学？大学？/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -624,7 +653,6 @@
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -633,17 +661,10 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-27T23:36:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-27T23:36:04+08:00">
                 2016-04-27
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长2 分钟 </span>
-  </span>
-
 
             
 
@@ -654,8 +675,6 @@
 
           
             
-          
-
           
 
           
@@ -676,10 +695,11 @@
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -690,17 +710,13 @@
       
         
           
-          大学？大学？ 大学？仅仅写给自己
+            <h1 id="大学？大学？-大学？"><a href="#大学？大学？-大学？" class="headerlink" title="大学？大学？ 大学？"></a>大学？大学？ 大学？</h1><p><strong>仅仅写给自己</strong></p>
+<hr>
+<h2 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h2><p>生活在这个大学里那种迷茫有时候只有自己知道，有时候的动力其实是为0的，只能按照自己的想法去走，可是一个人搞了两个晚上的东西，还是没有成功，有些事情只能自己去做，没人会对自己的事情感兴趣，更不会去帮你。当一个问题查阅了百度，google后仍旧没有解决，那种失落或许没人能懂！<br>连续两个晚上都在弄，看来百度，查了google，连youtube上的视频看了，然而问题依旧，只能靠自己慢慢去搞。然而MinwgM，Cmake对于一个刚刚接触软件工程的人来说，没有任何人的帮助，自己慢慢的去看，略知皮毛，然而Clion的报错让我已经筋疲力尽。<br>昨晚开始配置Clion，从MinWG开始，然后是Cmake，都是一个个的新名词，一次又一次的失败W，刚刚开始连Cmake都无法使用，后来helloworld都无法运行。这次是MinGM的报错，百度了，google了，看了youtube，这个问题不是我一个人遇到，然而我却看不到解决的方法，满是英文的屏幕看的非常吃力，当没有答案时，只能自己去创造答案。自己一个人去看报错的文档，然而我又一次高估了自己的能力……晦涩难懂的英文和路径，一头雾水。<br>同时IDEA也让我感到了无力，深深的无力。为什么，他们家的IDE要让开发者把时间都放在大量的配置上去。最后还是投靠了eclipse。但让clion我会继续研究下去的。</p>
+<hr>
+<p>或许有时候是太高估自己了，要走和别人不一样的道路，就用个编译器都要标新立异。从github+hexo的博客搭建到今天的Clion和Idea，真的很浪费时间，收获感觉微乎其微，达不到什么实质性的东西，包括现在学习github，好像是一个错误的想法，而且重要的是把别人往沟里带，让别人按自己的想法走，多可笑啊。是该好好整理一下自己的想法了，有时候该问问那些过来的人，多听听他们的建议，不要给自己多走弯路。</p>
 
-第一篇生活在这个大学里那种迷茫有时候只有自己知道，有时候的动力其实是为0的，只能按照自己的想法去走，可是一个人搞了两个晚上的东西，还是没有成功，有些事情只能自己去做，没人会对自己的事情感兴趣，更不会去帮你。当一个问题查阅了百度，google后仍旧没有解决，那种失落
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/04/27/大学？大学？大学？/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -713,8 +729,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -723,7 +744,6 @@
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -738,20 +758,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/23/LinkList特有的方法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/23/LinkList特有的方法/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -772,7 +789,6 @@
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -781,17 +797,10 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-23T15:31:21+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-23T15:31:21+08:00">
                 2016-04-23
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长1 分钟 </span>
-  </span>
-
 
             
 
@@ -802,8 +811,6 @@
 
           
             
-          
-
           
 
           
@@ -824,10 +831,11 @@
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -838,26 +846,38 @@
       
         
           
-          LinkList特有的方法
-addFirst();addLast();
+            <h1 id="LinkList特有的方法"><a href="#LinkList特有的方法" class="headerlink" title="LinkList特有的方法"></a>LinkList特有的方法</h1><blockquote>
+<p>addFirst();<br>addLast();</p>
+</blockquote>
+<p>添加元素，第一个或最后一个。</p>
+<hr>
+<blockquote>
+<p>getList();<br>getFirst();</p>
+</blockquote>
+<p>获取元素，但是不会删除。如果集合中没有元素，会抛出<strong>NoSuchElementException</strong>。</p>
+<hr>
+<blockquote>
+<p>removeFirst();<br>removeLast();</p>
+</blockquote>
+<p>获取元素，但是元素被删除。如果集合中没有元素，就会出现<strong>NoSuchElementException</strong>。</p>
+<hr>
+<p>在jdk1.6中出现了替代的方法：</p>
+<blockquote>
+<p>offerFirst();<br> offerLast();</p>
+</blockquote>
+<p>添加元素。</p>
+<hr>
+<blockquote>
+<p>peekFirst();<br>peekLast();</p>
+</blockquote>
+<p>获取元素，但是元素不被删除。如果集合中没有元素，会返回<strong>null</strong>。</p>
+<hr>
+<blockquote>
+<p>pollFirst();<br>pollLast();</p>
+</blockquote>
+<p>获取元素，但是元素被删除。如果集合中没有元素，会返回<strong>null</strong>。</p>
 
-添加元素，第一个或最后一个。
-
-
-getList();getFirst();
-
-获取元素，但是不会删除。如果集合中没有元素，会抛出NoSuchElementException。
-
-
-removeFirst();removeLa
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/04/23/LinkList特有的方法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -870,8 +890,13 @@ removeFirst();removeLa
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -880,7 +905,6 @@ removeFirst();removeLa
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -895,20 +919,17 @@ removeFirst();removeLa
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/21/清除右键无效项/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/21/清除右键无效项/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -929,7 +950,6 @@ removeFirst();removeLa
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -938,17 +958,10 @@ removeFirst();removeLa
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-21T21:32:13+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-21T21:32:13+08:00">
                 2016-04-21
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长1 分钟 </span>
-  </span>
-
 
             
 
@@ -959,8 +972,6 @@ removeFirst();removeLa
 
           
             
-          
-
           
 
           
@@ -981,10 +992,11 @@ removeFirst();removeLa
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -995,20 +1007,19 @@ removeFirst();removeLa
       
         
           
-           清除右键无效项
-前言有时在安装一些程序时，当程序卸载后会留下一些右键无效项，对于强迫症处女座来说，这是一件万万不能的。
+            <p> 清除右键无效项</p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>有时在安装一些程序时，当程序卸载后会留下一些右键无效项，对于强迫症处女座来说，这是一件万万不能的。</p>
+<hr>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ul>
+<li><p>新建一个文本文档，复制下面的代码到文本里</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@ ECHO OFF</span><br><span class="line">@ ECHO.</span><br><span class="line">@ ECHO.</span><br><span class="line">@ ECHO. 说 明</span><br><span class="line">@ ECHO -----------------------------------------------------------------------</span><br><span class="line">@ ECHO </span><br><span class="line">@ ECHO 可能杀毒软件会提示威胁项，允许运行就好！</span><br><span class="line">@ ECHO </span><br><span class="line">@ ECHO -----------------------------------------------------------------------</span><br><span class="line">@ Echo.</span><br><span class="line">PAUSE</span><br><span class="line">regsvr32 /u /s igfxpph.dll</span><br><span class="line">reg delete HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers /f</span><br><span class="line">reg add HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\new /ve /d &#123;D969A300-E7FF-11d0-A93B-00A0C90F2719&#125;</span><br><span class="line">reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v HotKeysCmds /f</span><br><span class="line">reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v IgfxTray /f</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将文本的后缀改为<strong><em>.cmd</em></strong>。</p>
+</li>
+<li>双击运行这个脚本。<br>此时，你就会发现那些没用的右键选项都没有了 ^ ^</li>
+</ul>
 
-开始
-新建一个文本文档，复制下面的代码到文本里
-12345678910111213141516@ ECHO OFF@ ECHO.@ ECHO.@ ECHO. 说 明@ ECHO
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/04/21/清除右键无效项/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -1021,8 +1032,13 @@ removeFirst();removeLa
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1031,7 +1047,6 @@ removeFirst();removeLa
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -1046,20 +1061,17 @@ removeFirst();removeLa
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/21/第一次参加蓝桥杯感受/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/21/第一次参加蓝桥杯感受/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -1080,7 +1092,6 @@ removeFirst();removeLa
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1089,17 +1100,10 @@ removeFirst();removeLa
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-21T10:30:58+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-21T10:30:58+08:00">
                 2016-04-21
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长5 分钟 </span>
-  </span>
-
 
             
 
@@ -1110,8 +1114,6 @@ removeFirst();removeLa
 
           
             
-          
-
           
 
           
@@ -1132,10 +1134,11 @@ removeFirst();removeLa
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -1146,18 +1149,44 @@ removeFirst();removeLa
       
         
           
-            作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获  下面会列出我做的题和做题时的感受
+            <p>  作为一名大一新生，这是我第一次参加这样的比赛，比赛前也没要指望要得什么奖项，抱着锻炼的态度，还好有所收获<br>  下面会列出我做的题和做题时的感受</p>
+<hr>
+<blockquote>
+<h2 id="1-煤球数目"><a href="#1-煤球数目" class="headerlink" title="1.煤球数目"></a>1.煤球数目</h2><p>有一堆煤球，堆成三角棱锥形。具体：<br> 第一层放1个，<br>第二层3个（排列成三角形），<br>第三层6个（排列成三角形），<br>第四层10个（排列成三角形），<br>….<br>如果一共有100层，共有多少个煤球？<br>请填表示煤球总数目的数字。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>这个题的第一反应我是用excel做，用excel生成有序的数列，结果建立了excel后出现的是小树，瞬间懵逼…………只好一步一步的写代码，按理说这应该是一个简单的代码，可是我还是写错了，在我记忆里好像写的是5050……额，好心痛……</p>
+<hr>
+<blockquote>
+<h2 id="2-生日蜡烛"><a href="#2-生日蜡烛" class="headerlink" title="2.生日蜡烛"></a>2.生日蜡烛</h2><p>某君从某年开始每年都举办一次生日party，并且每次都要吹熄与年龄相同根数的蜡烛。<br>现在算起来，他一共吹熄了236根蜡烛。<br>请问，他从多少岁开始过生日party的？<br>请填写他开始过生日party的年龄数。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>这个题的第一反应还是excel表，最后我的确是用excel做出来了，也是这次比赛中唯一做对的题目。虽然用excel比较麻烦，但是对于我这种第一时间没有一个很好的明确思路的我来说，这样很快。</p>
+<hr>
+<blockquote>
+<h2 id="3-凑算式"><a href="#3-凑算式" class="headerlink" title="3.凑算式"></a>3.凑算式</h2><p><img src="http://img.blog.csdn.net/20160320152805039" alt="图1.1"><br>这个算式中A~I代表1~9的数字，不同的字母代表不同的数字。<br>比如：<br>6+8/3+952/714 就是一种解法，<br>5+3/1+972/486 是另一种解法。<br>这个算式一共有多少种解法？<br>注意：你提交应该是个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>很简单的暴力求解，为什么我没有做对呢…………开始的时候题的要求是0~9，后来改为1~9，可惜，我们考场没有收到任何通知…………我按0~9算的……悲哀的人生</p>
+<hr>
+<p>做到这里的时候好像时间就过去了一个半小时了，实在是太慢了，也侧面说面对算法不熟练……</p>
+<hr>
+<blockquote>
+<h2 id="4-快速排序"><a href="#4-快速排序" class="headerlink" title="4.快速排序"></a>4.快速排序</h2><p>排序在各种场合经常被用到。<br>快速排序是十分常用的高效率的算法。<br>其思想是：先选一个“标尺”，<br>用它把整个队列过一遍筛子，<br>以保证：其左边的元素都不大于它，其右边的元素都不小于它。<br>这样，排序问题就被分割为两个子区间。<br>再分别对子区间排序就可以了。<br>下面的代码是一种实现，请分析并填写划线部分缺少的代码。</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t = a[i];</span><br><span class="line">    a[i] = a[j];</span><br><span class="line">    a[j] = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> p, <span class="keyword">int</span> r)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = p;</span><br><span class="line">    <span class="keyword">int</span> j = r + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> x = a[p];</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">while</span>(i&lt;r &amp;&amp; a[++i]&lt;x);</span><br><span class="line">        <span class="keyword">while</span>(a[--j]&gt;x);</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=j) <span class="keyword">break</span>;</span><br><span class="line">        swap(a,i,j);</span><br><span class="line">    &#125;</span><br><span class="line">    ______________________;</span><br><span class="line">    return j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quicksort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> p, <span class="keyword">int</span> r)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p&lt;r)&#123;</span><br><span class="line">        <span class="keyword">int</span> q = partition(a,p,r);</span><br><span class="line">        quicksort(a,p,q<span class="number">-1</span>);</span><br><span class="line">        quicksort(a,q+<span class="number">1</span>,r);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">int</span> a[] = &#123;<span class="number">5</span>,<span class="number">13</span>,<span class="number">6</span>,<span class="number">24</span>,<span class="number">2</span>,<span class="number">8</span>,<span class="number">19</span>,<span class="number">27</span>,<span class="number">6</span>,<span class="number">12</span>,<span class="number">1</span>,<span class="number">17</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> N = <span class="number">12</span>;</span><br><span class="line"></span><br><span class="line">    quicksort(a, <span class="number">0</span>, N<span class="number">-1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;N; i++) <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line"></span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其实第一眼看到快速排序就有点后悔，因为之前看过，但是没有记住，当时并没有重视。so，这个题自然是做错了。</p>
+<hr>
+<blockquote>
+<p>##5.抽签<br>X星球要派出一个5人组成的观察团前往W星。<br>其中：<br>A国最多可以派出4人。<br>B国最多可以派出2人。<br>C国最多可以派出2人。<br>….<br>那么最终派往W星的观察团会有多少种国别的不同组合呢？<br>下面的程序解决了这个问题。<br>数组a[] 中既是每个国家可以派出的最多的名额。<br>程序执行结果为：<br>DEFFF<br>CEFFF<br>CDFFF<br>CDEFF<br>CCFFF<br>CCEFF<br>CCDFF<br>CCDEF<br>BEFFF<br>BDFFF<br>BDEFF<br>BCFFF<br>BCEFF<br>BCDFF<br>BCDEF<br>….<br>(以下省略，总共101行)</p>
+</blockquote>
+<p>没做出来</p>
+<hr>
+<blockquote>
+<h2 id="6-方格填数"><a href="#6-方格填数" class="headerlink" title="6.方格填数"></a>6.方格填数</h2><p><img src="http://img.blog.csdn.net/20160320154048055" alt="1.2"><br>填入0~9的数字。要求：连续的两个数字不能相邻。<br>（左右、上下、对角都算相邻）<br>一共有多少种可能的填数方案？<br>请填写表示方案数目的整数。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p>
+</blockquote>
+<p>这个题我是把每个格子标了序号，用暴力求解满足条件，好像我算的是400。额，有错了，好吧，我仅仅是做到这里。</p>
+<hr>
+<p>虽然我没有做完吧，甚至只做对了一道题，但是我想说，大一才刚刚开始，权当锻炼，而且还有很大的收获，以后要努力喽。</p>
 
-
-1.煤球数目有一堆煤球，堆成三角棱锥形。具体： 第一层放1个，第二层3个（排列成三角形），第三层6个（排列成三角形），第四层10个（排列成三角形），…
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/04/21/第一次参加蓝桥杯感受/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -1170,8 +1199,13 @@ removeFirst();removeLa
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1180,7 +1214,6 @@ removeFirst();removeLa
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -1195,20 +1228,17 @@ removeFirst();removeLa
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/20/我一直都在/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/20/我一直都在/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="杨晓辉">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ISLAND">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ISLAND" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨晓辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
 
     
       <header class="post-header">
@@ -1229,7 +1259,6 @@ removeFirst();removeLa
         
 
         <div class="post-meta">
-    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1238,17 +1267,10 @@ removeFirst();removeLa
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-20T21:34:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-20T21:34:04+08:00">
                 2016-04-20
               </time>
             
-
-    
-  <span class="post-letters-count">
-    &nbsp; | &nbsp;
-    <span>大概阅读时长0 分钟 </span>
-  </span>
-
 
             
 
@@ -1259,8 +1281,6 @@ removeFirst();removeLa
 
           
             
-          
-
           
 
           
@@ -1281,10 +1301,11 @@ removeFirst();removeLa
 
           
 
+          
+
         </div>
       </header>
     
-
 
 
     <div class="post-body" itemprop="articleBody">
@@ -1295,20 +1316,13 @@ removeFirst();removeLa
       
         
           
+            <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=35403523&auto=1&height=66"></iframe></p>
+<blockquote>
+<p>我没有最烈的酒，<br>我没有阳光和宇宙。<br>讲真儿，我从来没走，<br>所以也不需要留。<br>我在你身后。<br>不要愁，不要愁，<br>风雨与你共舟</p>
+</blockquote>
+<p>谢谢你！<br>加油，共勉！</p>
+
           
-
-我没有最烈的酒，我没有阳光和宇宙。讲真儿，我从来没走，所以也不需要留。我在你身后。不要愁，不要愁，风雨与你共舟
-
-谢谢你！加油，共勉！
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/04/20/我一直都在/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -1321,8 +1335,13 @@ removeFirst();removeLa
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1331,7 +1350,6 @@ removeFirst();removeLa
       
         <div class="post-eof"></div>
       
-
     </footer>
   </article>
 
@@ -1345,7 +1363,7 @@ removeFirst();removeLa
   </nav>
 
 
-          
+
           </div>
           
 
@@ -1377,10 +1395,12 @@ removeFirst();removeLa
                src="/images/avatar.png"
                alt="杨晓辉" />
           <p class="site-author-name" itemprop="name">杨晓辉</p>
-          <p class="site-description motion-element" itemprop="description">努力攒钱^ ^</p>
+           
+              <p class="site-description motion-element" itemprop="description">努力攒钱^ ^</p>
+          
         </div>
         <nav class="site-state motion-element">
-        
+
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
@@ -1393,8 +1413,10 @@ removeFirst();removeLa
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
@@ -1471,6 +1493,8 @@ removeFirst();removeLa
 
       
 
+      
+
     </div>
   </aside>
 
@@ -1505,30 +1529,38 @@ removeFirst();removeLa
 
 
         
-
 <div class="busuanzi-count">
-
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv"><span id="busuanzi_container_site_uv">您是本站第[<span id="busuanzi_value_site_uv"></span>]位访客</span><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+    <span class="site-uv">
+      <span id="busuanzi_container_site_uv">您是本站第[<span id="busuanzi_value_site_uv"></span>]位访客</span>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
   
 
   
-    <span class="site-pv"><span id="busuanzi_container_site_pv">本站总访问量[<span id="busuanzi_value_site_pv"></span>]次</span><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-  
+    <span class="site-pv">
+      <span id="busuanzi_container_site_pv">本站总访问量[<span id="busuanzi_value_site_pv"></span>]次</span>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
   
 </div>
-
 
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1625,134 +1657,15 @@ removeFirst();removeLa
 
 
 
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-      search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-      $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = $( "entry", xmlResponse ).map(function() {
-            return {
-              title: $( "title", this ).text(),
-              content: $("content",this).text(),
-              url: $( "url" , this).text()
-            };
-          }).get();
-          var $input = document.getElementById(search_id);
-          var $resultContent = document.getElementById(content_id);
-          $input.addEventListener('input', function(){
-            var matchcounts = 0;
-            var str='<ul class=\"search-result-list\">';
-            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-            $resultContent.innerHTML = "";
-            if (this.value.trim().length > 1) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var content_index = [];
-                var data_title = data.title.trim().toLowerCase();
-                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                var data_url = decodeURIComponent(data.url);
-                var index_title = -1;
-                var index_content = -1;
-                var first_occur = -1;
-                // only match artiles with not empty titles and contents
-                if(data_title != '') {
-                  keywords.forEach(function(keyword, i) {
-                    index_title = data_title.indexOf(keyword);
-                    index_content = data_content.indexOf(keyword);
-                    if( index_title >= 0 || index_content >= 0 ){
-                      isMatch = true;
-                      if (i == 0) {
-                        first_occur = index_content;
-                      }
-                    }
 
-                  });
-                }
-                // show search results
-                if (isMatch) {
-                  matchcounts += 1;
-                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                  var content = data.content.trim().replace(/<[^>]+>/g,"");
-                  if (first_occur >= 0) {
-                    // cut out 100 characters
-                    var start = first_occur - 20;
-                    var end = first_occur + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if(start == 0){
-                      end = 50;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    var match_content = content.substring(start, end);
-                    // highlight all keywords
-                    keywords.forEach(function(keyword){
-                      var regS = new RegExp(keyword, "gi");
-                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                    });
-
-                    str += "<p class=\"search-result\">" + match_content +"...</p>"
-                  }
-                  str += "</li>";
-                }
-              })};
-            str += "</ul>";
-            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-            $resultContent.innerHTML = str;
-          });
-          proceedsearch();
-        }
-      });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
 
 
   
+
+
+
+
 
   
 
@@ -1867,6 +1780,7 @@ removeFirst();removeLa
 
   
 
+  
 
 </body>
 </html>
