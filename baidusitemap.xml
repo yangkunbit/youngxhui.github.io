@@ -3,8 +3,27 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/02/08/Spring%E5%AD%A6%E4%B9%A0-%E4%B8%80/</loc>
+    <lastmod>2017-04-03T08:24:49.439Z</lastmod>
+    <data>
+        <display>
+        <title>Spring学习(一)</title>
+        <pubTime>2017-02-08T02:54:06.000Z</pubTime>
+        
+        <tag>java </tag>
+         
+        <tag>Spring </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/04/03/python%E7%88%AC%E5%8F%96%E6%96%97%E9%B1%BC%E5%9B%BE%E7%89%87/</loc>
-    <lastmod>2017-04-03T06:27:39.918Z</lastmod>
+    <lastmod>2017-04-03T08:13:43.774Z</lastmod>
     <data>
         <display>
         <title>python爬取斗鱼图片</title>
@@ -50,25 +69,6 @@
         <tag>java </tag>
          
         <tag>工具 </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/02/08/Spring%E5%AD%A6%E4%B9%A0-%E4%B8%80/</loc>
-    <lastmod>2017-02-08T03:01:10.524Z</lastmod>
-    <data>
-        <display>
-        <title>Spring学习(一)</title>
-        <pubTime>2017-02-08T02:54:06.000Z</pubTime>
-        
-        <tag>java </tag>
-         
-        <tag>Spring </tag>
          
          
            

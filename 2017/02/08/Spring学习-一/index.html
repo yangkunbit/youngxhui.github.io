@@ -105,7 +105,7 @@ Spring核心主要为两部分：(1).AOP:面向切面编程(2).IOC：控制反�
 Spring是一站式框架。Spring在JavaEE三层结构中，每一层都提供不同的解决技术。
 web层：SpringMVC
 service层：Spring的ioc">
-<meta property="og:updated_time" content="2017-02-08T03:01:10.524Z">
+<meta property="og:updated_time" content="2017-04-03T08:24:49.439Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring学习(一)">
 <meta name="twitter:description" content="Spring学习笔记，仅供自己参考。
@@ -514,32 +514,6 @@ service层：Spring的ioc">
 <li><p>Resource<br>name属性写创建dao对象的value值</p>
 </li>
 </ul>
-<h2 id="xml和注解比较"><a href="#xml和注解比较" class="headerlink" title="xml和注解比较"></a>xml和注解比较</h2><table>
-<thead>
-<tr>
-<th>比较项</th>
-<th>xml</th>
-<th>注解</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>添加</td>
-<td><code>&lt;Bean id=&quot;&quot; class=&quot;&quot;/&gt;</code></td>
-<td>@Component</td>
-</tr>
-<tr>
-<td>多例/单例</td>
-<td><code>&lt;Bean scope=&quot;prototype/&gt;&quot;</code></td>
-<td>@Scope</td>
-</tr>
-<tr>
-<td>对象类型注入</td>
-<td><code>&lt;bean id=&quot;&quot; class=&quot;&quot;&gt;  &lt;property name=&quot;&quot;ref=&quot;&quot;&gt;&lt;/property&gt;&lt;/bean&gt;</code></td>
-<td>@Resource</td>
-</tr>
-</tbody>
-</table>
 <h1 id="DI-依赖注入"><a href="#DI-依赖注入" class="headerlink" title="DI 依赖注入"></a>DI 依赖注入</h1><p>创建对象并且组装对象之间的关系</p>
 <h2 id="有参构造注入"><a href="#有参构造注入" class="headerlink" title="有参构造注入"></a>有参构造注入</h2><p>采用<code>constructor-arg</code>来进行,<code>name</code>和<code>value</code>进行对构造器的值进行注入。</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"preperty"</span> <span class="attr">class</span>=<span class="string">"com.young.property.PrepertyDemo1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"zhangsan"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -584,7 +558,7 @@ service层：Spring的ioc">
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"properties"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">props</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">prop</span> <span class="attr">key</span>=<span class="string">"name"</span>&gt;</span>root<span class="tag">&lt;/<span class="name">prop</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">props</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="xml和注解比较-1"><a href="#xml和注解比较-1" class="headerlink" title="xml和注解比较"></a>xml和注解比较</h2><table>
+<h2 id="xml和注解比较"><a href="#xml和注解比较" class="headerlink" title="xml和注解比较"></a>xml和注解比较</h2><table>
 <thead>
 <tr>
 <th>比较项</th>
@@ -863,7 +837,7 @@ service层：Spring的ioc">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#接口"><span class="nav-number">2.</span> <span class="nav-text">接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面向接口编程"><span class="nav-number">3.</span> <span class="nav-text">面向接口编程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IOC-控制反转"><span class="nav-number">4.</span> <span class="nav-text">IOC 控制反转</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是IOC"><span class="nav-number">4.1.</span> <span class="nav-text">什么是IOC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC操作的两种操作"><span class="nav-number">4.2.</span> <span class="nav-text">IOC操作的两种操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC的底层原理"><span class="nav-number">4.3.</span> <span class="nav-text">IOC的底层原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC案例"><span class="nav-number">4.4.</span> <span class="nav-text">IOC案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring的Bean管理-xml"><span class="nav-number">4.5.</span> <span class="nav-text">Spring的Bean管理(xml)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例化三种方式"><span class="nav-number">4.5.1.</span> <span class="nav-text">实例化三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bean标签常用属性"><span class="nav-number">4.5.2.</span> <span class="nav-text">Bean标签常用属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring的Bean的管理-注解"><span class="nav-number">4.6.</span> <span class="nav-text">Spring的Bean的管理(注解)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注解"><span class="nav-number">4.6.1.</span> <span class="nav-text">注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bean管理常用注解"><span class="nav-number">4.6.2.</span> <span class="nav-text">Bean管理常用注解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xml和注解比较"><span class="nav-number">4.7.</span> <span class="nav-text">xml和注解比较</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DI-依赖注入"><span class="nav-number">5.</span> <span class="nav-text">DI 依赖注入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#有参构造注入"><span class="nav-number">5.1.</span> <span class="nav-text">有参构造注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#set方法注入"><span class="nav-number">5.2.</span> <span class="nav-text">set方法注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注入对象类型属性"><span class="nav-number">5.3.</span> <span class="nav-text">注入对象类型属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#xml配置方式"><span class="nav-number">5.3.1.</span> <span class="nav-text">xml配置方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注解注入方式"><span class="nav-number">5.3.2.</span> <span class="nav-text">注解注入方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复杂类型注入"><span class="nav-number">5.4.</span> <span class="nav-text">复杂类型注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xml和注解比较-1"><span class="nav-number">5.5.</span> <span class="nav-text">xml和注解比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置文件与注解混合使用"><span class="nav-number">5.6.</span> <span class="nav-text">配置文件与注解混合使用</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#接口"><span class="nav-number">2.</span> <span class="nav-text">接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面向接口编程"><span class="nav-number">3.</span> <span class="nav-text">面向接口编程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IOC-控制反转"><span class="nav-number">4.</span> <span class="nav-text">IOC 控制反转</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是IOC"><span class="nav-number">4.1.</span> <span class="nav-text">什么是IOC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC操作的两种操作"><span class="nav-number">4.2.</span> <span class="nav-text">IOC操作的两种操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC的底层原理"><span class="nav-number">4.3.</span> <span class="nav-text">IOC的底层原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC案例"><span class="nav-number">4.4.</span> <span class="nav-text">IOC案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring的Bean管理-xml"><span class="nav-number">4.5.</span> <span class="nav-text">Spring的Bean管理(xml)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例化三种方式"><span class="nav-number">4.5.1.</span> <span class="nav-text">实例化三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bean标签常用属性"><span class="nav-number">4.5.2.</span> <span class="nav-text">Bean标签常用属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring的Bean的管理-注解"><span class="nav-number">4.6.</span> <span class="nav-text">Spring的Bean的管理(注解)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注解"><span class="nav-number">4.6.1.</span> <span class="nav-text">注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bean管理常用注解"><span class="nav-number">4.6.2.</span> <span class="nav-text">Bean管理常用注解</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DI-依赖注入"><span class="nav-number">5.</span> <span class="nav-text">DI 依赖注入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#有参构造注入"><span class="nav-number">5.1.</span> <span class="nav-text">有参构造注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#set方法注入"><span class="nav-number">5.2.</span> <span class="nav-text">set方法注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注入对象类型属性"><span class="nav-number">5.3.</span> <span class="nav-text">注入对象类型属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#xml配置方式"><span class="nav-number">5.3.1.</span> <span class="nav-text">xml配置方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注解注入方式"><span class="nav-number">5.3.2.</span> <span class="nav-text">注解注入方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复杂类型注入"><span class="nav-number">5.4.</span> <span class="nav-text">复杂类型注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xml和注解比较"><span class="nav-number">5.5.</span> <span class="nav-text">xml和注解比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置文件与注解混合使用"><span class="nav-number">5.6.</span> <span class="nav-text">配置文件与注解混合使用</span></a></li></ol></li></ol></div>
             
 
           </div>
