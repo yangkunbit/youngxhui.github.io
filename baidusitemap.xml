@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://yoursite.com/2017/04/15/20217%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
+    <lastmod>2017-04-15T15:13:43.158Z</lastmod>
+    <data>
+        <display>
+        <title>20217蓝桥杯</title>
+        <pubTime>2017-04-15T03:37:57.000Z</pubTime>
+        
+        <tag>蓝桥杯 </tag>
+         
+        <tag>java </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/05/03/GitHub-for-Windows%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B(%E4%B8%80)/</loc>
+    <lastmod>2017-04-15T14:35:17.468Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub for Windows使用教程（一）</title>
+        <pubTime>2016-05-03T11:09:42.000Z</pubTime>
+        
+        <tag>GitHub </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2017/04/04/%E8%AE%A1%E8%92%9C%E5%AE%A2%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9F%E8%B5%9B-5-%E8%AF%95%E9%A2%98/</loc>
@@ -129,23 +165,6 @@
         <tag>工具 </tag>
          
         <tag>测试 </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/05/03/GitHub-for-Windows%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B(%E4%B8%80)/</loc>
-    <lastmod>2017-01-06T05:55:30.877Z</lastmod>
-    <data>
-        <display>
-        <title>GitHub for Windows使用教程（一）</title>
-        <pubTime>2016-05-03T11:09:42.000Z</pubTime>
-        
-        <tag>GitHub </tag>
          
          
            
