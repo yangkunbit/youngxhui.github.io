@@ -104,8 +104,7 @@
 布局代码
 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051&amp;lt;RelativeLay">
 <meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/S60805-173456.jpg">
-<meta property="og:image" content="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg">
-<meta property="og:updated_time" content="2016-11-22T02:41:31.520Z">
+<meta property="og:updated_time" content="2017-04-26T03:02:44.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="底部导航按钮">
 <meta name="twitter:description" content="关于底部按钮的实现关于底部导航按钮网上实现底部按钮的方法有很多，在这里RadioGroup+ViewPager+fragmnt实现的。
@@ -392,8 +391,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2016-11-22T10:41:31+08:00">
-                2016-11-22
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-26T11:02:44+08:00">
+                2017-04-26
               </time>
             
           </span>
@@ -440,7 +439,7 @@
                   <span class="post-meta-item-text">字数</span>
                 
                 <span title="字数">
-                  747
+                  743
                 </span>
               
 
@@ -486,9 +485,7 @@
 <p>FragmentPagerAdapter数据适配器</p>
 <p>MyFragmentPagerAdapter</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyFragmentPagerAdapter</span> <span class="keyword">extends</span> <span class="title">FragmentPagerAdapter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> PAGER_COUNT = <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">private</span> DocFRAG docFRAG = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">private</span> CameraFRAG cameraFRAG = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">private</span> UserFRAG userFRAG = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyFragmentPagerAdapter</span><span class="params">(FragmentManager fm)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(fm);</span><br><span class="line">        docFRAG = <span class="keyword">new</span> DocFRAG();</span><br><span class="line">        cameraFRAG = <span class="keyword">new</span> CameraFRAG();</span><br><span class="line">        userFRAG = <span class="keyword">new</span> UserFRAG();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> PAGER_COUNT;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">instantiateItem</span><span class="params">(ViewGroup vg, <span class="keyword">int</span> position)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.instantiateItem(vg, position);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroyItem</span><span class="params">(ViewGroup container, <span class="keyword">int</span> position, Object object)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"position Destory"</span> + position);</span><br><span class="line">        <span class="keyword">super</span>.destroyItem(container, position, object);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Fragment <span class="title">getItem</span><span class="params">(<span class="keyword">int</span> position)</span> </span>&#123;</span><br><span class="line">        Fragment fragment = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">switch</span> (position) &#123;</span><br><span class="line">            <span class="keyword">case</span> MainActivity.PAGE_ONE:</span><br><span class="line">                fragment = docFRAG;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> MainActivity.PAGE_TWO:</span><br><span class="line">                fragment = cameraFRAG;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> MainActivity.PAGE_THREE:</span><br><span class="line">                fragment = userFRAG;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> fragment;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="打赏支持"><a href="#打赏支持" class="headerlink" title="打赏支持"></a>打赏支持</h1><hr>
-<p><img src="http://7xt81u.com1.z0.glb.clouddn.com/%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81.jpg" alt=""></p>
-
+<center><br><iframe src="\donate\index.html" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;" frameborder="0" scrolling="no"><br></iframe><br></center>
       
     </div>
 
@@ -737,7 +734,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于底部按钮的实现"><span class="nav-number">1.</span> <span class="nav-text">关于底部按钮的实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打赏支持"><span class="nav-number">2.</span> <span class="nav-text">打赏支持</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于底部按钮的实现"><span class="nav-number">1.</span> <span class="nav-text">关于底部按钮的实现</span></a></li></ol></div>
             
 
           </div>
